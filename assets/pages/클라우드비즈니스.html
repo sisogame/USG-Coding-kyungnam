@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+  <title>USG코딩오픈메타캠퍼스</title>
+  <link rel="stylesheet" href="../front/css/style.css" />
+  <!-- AOS 라이브러리 불러오기-->
+  <script src="../front/js/jquery-3.6.0.min.js"></script>
+  <script src="../front/js/aos.js"></script>
+  <script src="../front/js/index.js"></script>
+  <script src="../front/js/slick.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header_container">
+      <div class="hederWrap">
+        <div class="utilWrap">
+          <div class="mo_logobg">
+            <div class="logo mo-logo">
+              <a href="#" title="USG 코딩아카데미" class="logo__usg">
+                <img src="../front/images/logo_new.svg" alt="USG">
+              </a>
+            </div>
+          </div>
+          <div class="util_right">
+            <ul class="nav_item">
+              <li class=""><a href="https://www.youtube.com/@usg_comc" class="icon_sns mrt02" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube">
+                </a>
+                <a href="https://www.instagram.com/p/C706rj3S4Zk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="icon_sns" target="_blank"><img src="../front/images/icon_insta.png" alt="Instagram">
+                </a>
+              </li>
+              <li class="mlf20"><a href="" class="btn_login"> 로그인</a></li>
+              <li class="mlf20"><a href="" class="btn_join">회원가입</a></li>
+              <div class="dropdown">
+                <a class="dropbtn"><span>USG운영자1님</span></a>
+                <div class="dropdown-list">
+                  <a href="#">PCMS 관리</a>
+                  <a href="#">개인정보수정</a>
+                  <a href="#">로그아웃</a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="header">
+          <div class="headerInner">
+            <button type="button" class="opened-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="overlay"></div>
+            <nav class="navbar">
+              <button type="button" class="closed-menu">
+                <img src="../front/images/closed.svg" class="closed-icon" alt="closed">
+              </button>
+              <ul class="menu">
+                <li class="menu-item mobilemember">
+                  <div class="memberArea">
+                    <a href="" class="member_box login">login</a>
+                    <a href="" class="member_box join">회원가입</a>
+                  </div>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="/common/about.do" data-toggle="sub-menu">About<i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">캠퍼스 소개</a></li>
+                    <li class="menu-item"><a href="#">CI 소개</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#">강좌소개</a></li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">교육과정<i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#" class="plfrt05">클라우드 비즈니스 솔루션</a></li>
+                    <li class="menu-item"><a href="#">플랫폼 비즈니스 과정</a></li>
+                    <li class="menu-item"><a href="#">산업디지털트윈 과정</a></li>
+                    <li class="menu-item"><a href="#">첨단 제조업 과정</a></li>
+                    <li class="menu-item"><a href="#">부트캠프 과정</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#">교수소개</a></li>
+                <li class="menu-item"><a href="#">나의 강의실</a></li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">캠퍼스 소식 <i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">FAQ</a></li>
+                    <li class="menu-item"><a href="#">문의하기</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">공지사항 <i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#"> 교육생 모집안내</a></li>
+                    <li class="menu-item"><a href="#">플랫폼 비즈니스 과정</a></li>
+                    <li class="menu-item"><a href="#">산업디지털트윈 과정</a></li>
+                    <li class="menu-item"><a href="#">첨단 제조업 과정</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#"><img src="../front/images/menu.svg" alt="사이트맵" class="sitemap"><span class="site_span"> 사이트맵 </span></a></li>
+                <li class="menu-item flx-end">
+                  <ul>
+                    <li class="snsWrap">
+                      <a href="https://www.youtube.com/@usg_comc" class="bg_none mo-youtube" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube"><span class="site_span"></span></a>
+                      <a href="https://www.instagram.com/p/C706rj3S4Zk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="bg_none" target="_blank"><img src="../front/images/icon_insta.png" alt="Instagram"><span class="site_span"></span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contentBody">
+      <!-- 컨텐츠가 들어갈 부분 -->
+      <div class="subContent">
+        <div class="subBody education">
+          <div class="subcontent edu-mega">
+            <section class="secEdu bg-mega">
+              <div class="flex-wrap" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="top-edutit">글로벌 ERP 솔루션의 모든 것, <br> <span>클라우드 기반 비즈니스 솔루션 과정</span></h3>
+                <img src="../front/images/img_megazone.svg" class="img-mega" alt="">
+              </div>
+            </section>
+            <section class="edu-signature inner">
+              <h4 class="edu-tit" data-aos="fade-up" data-aos-delay="100">교육과정의 특징</h4>
+              <div>
+                <ul class="flex-wrap">
+                  <li class="eduBox" data-aos="fade-up" data-aos-delay="100">
+                    <ul class="eduList">
+                      <li class="list-tit">Blended Learning</li>
+                      <li class="bar"></li>
+                      <li class="list-txt">비전공자도 학습가능한 비즈니스 솔루션 (SAP, Oracle)의 기초 이론부터 애플리케이션 개발 툴에 대한 강의 및 실습까지 단계별 학습</li>
+                      <li class="list-txt">온라인 강의의 자기 주도형 학습과 오프라인의 이론 및 실습 중심으로 이루어진 혼합형 학습을 통해 학습효과 극대화</li>
+                    </ul>
+                  </li>
+                  <li class="eduBox" data-aos="fade-up" data-aos-delay="200">
+                    <ul class="eduList">
+                      <li class="list-tit">Project-Based Learning</li>
+                      <li class="bar"></li>
+                      <li class="list-txt">기 학습한 기초 이론과 개발 툴에 대한 Knowledge를 기반으로, 3주간의 프로젝트 수행을 통해 개발 경험과 문제해결 능력 향상</li>
+                      <li class="list-txt">소규모 조직단위로 프로젝트를 진행하여, 기업의 기본적인 업무 프로세스 및 애플리케이션 개발 툴에 대한 이해</li>
+                    </ul>
+                  </li>
+                  <li class="eduBox" data-aos="fade-up" data-aos-delay="300">
+                    <ul class="eduList">
+                      <li class="list-tit">Real-world Learning</li>
+                      <li class="bar"></li>
+                      <li class="list-txt">기업에서 전 세계적으로 가장 많이 사용하는 ERP (SAP, Oracle)애플리케이션을 이해하고, 실제 프로젝트 경험이 많은 강사진의 이론과 실습교육을 을 통해 기업 실무 수행 역량 향상</li>
+                      <li class="list-txt">실제 기업에서 활용하는 기업용 클라우드 교육 환경과 SAP 공식 학습 플랫폼 및 자료들을 활용한 교육으로 기업의 실제 업무에 활용 가능한 학습</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="edu-theme">
+              <div class="inner">
+                <h4 class="edu-tit" data-aos="fade-up" data-aos-delay="100">교육과정 로드맵</h4>
+                <div class="edu-wrap">
+                  <div class="on-tit tit-box" data-aos="fade-up" data-aos-delay="100">
+                    <p>Online 교육</p>
+                  </div>
+                  <p class="sub-tit">기업의 조직체계, 핵심 업무 및 업무 프로세스 흐름, 이를 지원하는 ERP 애플리케이션 Knowledge에 대한 이론적 이해</p>
+                </div>
+                <div class="edu-wrap off-wrap">
+                  <div class="off-tit tit-box" data-aos="fade-up" data-aos-delay="100">
+                    <p>Offline 교육</p>
+                  </div>
+                  <p class="sub-tit" data-aos="fade-up" data-aos-delay="100">01. SAP ERP 애플리케이션 Overview(기업 비즈니스 소프트웨어 1위)</p>
+                </div>
+                <ul class="view-wrap">
+                  <li class="view-list">
+                    <span class="num-tit">1</span>
+                    <p class="sub-txt">기업의 조직체계 및 핵심 업무에 대한 이해</p>
+                    <div class="bar"></div>
+                    <div class="blue-box">
+                      <p>수행과제</p>
+                    </div>
+                    <p class="bottom-txt">모델 기업(Model Company) 조직체계 및 기본 업무 정의</p>
+                  </li>
+                  <li class="view-list">
+                    <span class="num-tit">2</span>
+                    <p class="sub-txt">조직별 업무 프로세스 및 업무 프로세스간 연계에 대한 이해</p>
+                    <div class="bar"></div>
+                    <div class="blue-box">
+                      <p>수행과제</p>
+                    </div>
+                    <p class="bottom-txt">모델 기업의 전사 업무 프로세스 설계</p>
+                  </li>
+                  <li class="view-list">
+                    <span class="num-tit">3</span>
+                    <p class="sub-txt"><span class="num">1</span> + <span class="num">2</span>를 기반으로 기업의 업무를 지원하는 ERP에 대한 기본 이해</p>
+                    <div class="bar"></div>
+                    <div class="blue-box">
+                      <p>모듈별 기본기능</p>
+                    </div>
+                    <p class="bottom-txt">판매관리,생산관리,자재 관리,재무회계,관리회계</p>
+                  </li>
+                  <li class="view-list">
+                    <span class="num-tit">4</span>
+                    <p class="sub-txt">클라우드 IT 환경과 클라우드 ERP 솔루션에 대한 이해(Overview)</p>
+                    <div class="bar"></div>
+                    <p class="bottom-txt">SAP S/4HANA Cloud, Public Edition & Private Edition 솔루션 이해</p>
+                  </li>
+                </ul>
+                <div class="abap-wrap">
+                  <p class="sub-tit" data-aos="fade-up" data-aos-delay="100">02. SAP ERP 개발 툴(SAP ABAP) 이해 (프로그래밍 코딩 실습 중심)</p>
+                  <ul class="grid-container">
+                    <li class="grid-item">
+                      <span class="num-tit">1</span>
+                      <p class="sub-txt">SAP ERP 시스템 아키텍쳐 및 ABAP 프로그램밍 툴 이해</p>
+                    </li>
+                    <li class="grid-item">
+                      <span class="num-tit">2</span>
+                      <p class="sub-txt">SAP System Navigation</p>
+                    </li>
+                    <li class="grid-item">
+                      <span class="num-tit">3</span>
+                      <p class="sub-txt">SAP ABAP Repository and Workbench 구조/기본적인 이해</p>
+                    </li>
+                    <li class="grid-item">
+                      <span class="num-tit">4</span>
+                      <p class="sub-txt">SAP Program 구조 및 흐름</p>
+                    </li>
+                    <li class="grid-item">
+                      <span class="num-tit">5</span>
+                      <p class="sub-txt">SAP ABAP Dictionary 설계</p>
+                    </li>
+                    <li class="grid-item">
+                      <span class="num-tit">6</span>
+                      <p class="sub-txt">SAP ABAP Module 프로그래밍</p>
+                    </li>
+                    <li class="grid-item">
+                      <span class="num-tit">7</span>
+                      <p class="sub-txt">SAP ABAP Reporting 프로그래밍</p>
+                    </li>
+                    <li class="grid-item">
+                      <span class="num-tit">8</span>
+                      <p class="sub-txt">SAP ALV 프로그래밍</p>
+                    </li>
+                    <li class="grid-item">
+                      <span class="num-tit">9</span>
+                      <p class="sub-txt">SAP ABAP Internal Table 정의</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tool-project-wrap">
+                  <p class="sub-tit" data-aos="fade-up" data-aos-delay="100">03. 클라우드 기반 ERP 애플리케이션 개발 툴 기반의 프로젝트 과제 수행</p>
+                  <div class="wrap-box">
+                    <p class="sub-txt">SAP ERP 개발 프로젝트 실습(3주간 프로젝트 수행)</p>
+                    <p class="bottom-txt">· 모델기업의 조직체계/업무 프로세스/ERP Core 모듈/ABAP 기반으로 개발 프로젝트 수행(전원 협업)</p>
+                    <p class="bottom-txt">
+                      · 기업의 실무 데이터와 유사하게 프로젝트 수행 테스트
+                    </p>
+                  </div>
+                </div>
+                <div class="project-wrap">
+                  <p class="sub-tit" data-aos="fade-up" data-aos-delay="100">04. 클라우드 기반 ERP 애플리케이션 개발 프로젝트 과제 수행</p>
+                  <div class="wrap-box">
+                    <p class="sub-txt"><span class="num-tit">1</span>Oracle ERP 애플리케이션 시스템 이해</p>
+                    <p class="sub-txt"><span class="num-tit">2</span>Oracle 개발 통합 빌더인 Oracle Form Developer에 대한 이해</p>
+                    <ul class="oracle-wrap">
+                      <li class="oracle-list">· Forms에 대한 기본적 이행</li>
+                      <li class="oracle-list">· 표준 템플릿 커스터마이징 방법</li>
+                      <li class="oracle-list">· Forms 데이터 블록 및 객체그룹 생성/사용 방법</li>
+                      <li class="oracle-list">· Forms의 다양한 유형의 트리거에 대한 이해</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!-- 컨텐츠가 들어갈 부분 eee -->
+    </div>
+
+    <div class="footerWrap">
+      <section>
+        <div class="util_link_outer">
+          <div class="util_link">
+            <div class="util_link_list footer_autoplay" style="margin-bottom:0px;">
+              <!-- 교육부, 한국연구재단, 울산경남지역혁신플랫폼, 경상남도, 울산광역시, 경남대학교, 울산경남지역혁신플랫폼 ict -->
+              <a href="https://www.moe.go.kr/main.do?s=moe" target="_blank" class="util_link_item"><img src="../front/images/logo_moe.png" class="util_link_img" alt="교육부"></a>
+              <a href="https://www.nrf.re.kr/index" target="_blank" class="util_link_item"><img src="../front/images/logo_nrf.png" class="util_link_img" alt="한국연구재단"></a>
+              <a href="http://gn-platform.or.kr/main.do" target="_blank" class="util_link_item"><img src="../front/images/logo_platform.png" class="util_link_img" alt="울산·경남지역혁신플랫폼"></a>
+              <a href="https://www.gyeongnam.go.kr/index.gyeong" target="_blank" class="util_link_item"><img src="../front/images/logo_gyeongnam.png" class="util_link_img" alt="경상남도"></a>
+              <a href="https://www.ulsan.go.kr/u/rep/main.ulsan" target="_blank" class="util_link_item"><img src="../front/images/logo_ulsan.png" class="util_link_img" alt="울산광역시"></a>
+              <a href="https://www.kyungnam.ac.kr" target="_blank" class="util_link_item"><img src="../front/images/logo_kyungnam_univ.png" class="util_link_img" alt="경남대학교"></a>
+              <a href="https://platform.kyungnam.ac.kr/kr/" target="_blank" class="util_link_item"><img src="../front/images/logo_ict.png" class="util_link_img" alt="울산·경남지역혁신플랫폼 스마트제조ICT사업단"></a>
+            </div>
+            <div class="arrow prev" id="footer_arrow_prev"><span class="arrow_hidden">prev</span></div>
+            <div class="arrow next" id="footer_arrow_next"><span class="arrow_hidden">next</span></div>
+          </div>
+        </div>
+        <div id="footer">
+          <div class="inner">
+            <div class="footer_logoArea">
+              <div class="foot_logo"><img src="../front/images/logo_footer.svg" alt="USG코딩오픈메타캠퍼스"></div>
+              <div class="tail_menu">
+                <ul>
+                  <li><a href="javascript:void(0);" onclick="gnbMenuAction('/common/privacyTerms.do')" class="color_orange">개인정보처리방침</a></li>
+                  <li><a href="javascript:void(0);" onclick="gnbMenuAction('/common/useTerms.do')">이용약관</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tail_menu">
+            </div>
+            <div class="addr">
+              <p class="txt_add">(51767 ) 경상남도 창원시 마산합포구 경남대학로 7 창조관 3층 스마트제조ICT사업단 (USG코딩오픈메타캠퍼스)</p>
+              <p class="copyright mt20 mt15">USG코딩오픈메타캠퍼스 센터는 경남대학교가 운영하고 있으며, 교육 및 업무에 대한 모든 책임은 경남대학교에 있습니다.</p>
+              <p class="copyright mt05">Copyrightⓒ USG코딩오픈메타캠퍼스 센터 ALL RIGHT RESERVED</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="../front/js/menu.js"></script>
+  <script>
+    AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+  </script>
+</body>
+
+</html>

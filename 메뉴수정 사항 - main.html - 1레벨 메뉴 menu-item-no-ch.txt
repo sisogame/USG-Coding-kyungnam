@@ -1,0 +1,9 @@
+- main.html : 1레벨 메뉴 "menu-item-no-children" 클래스 추가
+- topNavi.css 
+   - selected 변경
+   - .header .menu>.menu-item.menu-item-no-children.selected > a{ color:#fff; background-color: #113E62; }
+
+- menu.js
+   - navbarMenu이벤트 리스너 수정
+   - callapseSubMenu() 수정
+   - resizeScreen() 조건 추가

@@ -1,0 +1,110 @@
+/* tab [s] */
+.tab_menu .tabWrap { display: block; margin: 0 auto; max-width: 75rem; margin-top: 2.8125rem; } 
+
+.tab_menu .tab { display: flex; z-index: 999; position: relative; background: #fff; flex-wrap: wrap; padding: 0; margin-top: 0; gap: 10px; } 
+
+.tab_menu .tab_item { cursor: pointer; border: .125rem solid #999; padding: .75rem; border-radius: 3.125rem; font-size: 1.125rem; font-weight: 700; color: #999; } 
+
+
+.tab_menu .tab_inner { color: #666; font-size: 1.5rem; display: none; width: 100%; } 
+
+.tab_menu .tab_item.active { background: #007AF5; border: none; color: #fff; } 
+
+.tab_menu .tab_inner.active { display: block; } 
+
+.tab_menu .tab_inner_wrap { margin-top: 24px; display: flex; align-items: center; justify-content: center; width: 100%; height: auto; height: 100%; padding: 0px 0 0 0; background: #fff; } 
+
+/* tab [e] */
+
+/* swiper area[s] */
+
+.tab_inner .swiper-container .swiper-wrapper { position: relative; width: 100%; height: 100%; z-index: 1; display: flex; transition-property: transform; box-sizing: content-box; } 
+
+.tab_inner .swiper-container .swiper-button-wrap { position: absolute; top: 50%; left: 0; right: 0; max-width: 1200px; margin: 0 auto; width: 100%; } 
+
+.tab_inner .swiper-container .swiper-button-wrap .swiper-button-next { right: -6%; width: 2.5rem; height: 3.375rem; } 
+
+.tab_inner .swiper-container .swiper-button-wrap .swiper-button-prev { left: -6%; width: 2.5rem; height: 3.375rem; } 
+
+
+.tab_inner .swiper-container { position: relative; width: 100%; height: 100%; display: flex; align-items: center; } 
+
+.tab_inner .swiper-container .swiper-slide { position: relative; transform: scale(.84); transition: all .3s ease-in-out; overflow: hidden; border-radius: 0; max-width: 1200px !important; height: 520px; } 
+
+.tab_inner .swiper-container .swiper-backface-hidden .swiper-slide { transform: scale(.84) translateZ(0); } 
+
+.tab_inner .swiper-container .swiper-slide.swiper-slide-active { transform: scale(1) !important; opacity: 1 !important; } 
+
+.tab_inner .swiper-container .swiper-backface-hidden .swiper-slide.swiper-slide-active { transform: scale(1) translateZ(0) !important; } 
+
+.tab_inner .swiper-container .swiper-image { position: relative; width: 100%; height: 520px; } 
+
+.tab_inner .swiper-container .swiper-image .image { width: 100%; height: 100%; background-color: transparent; display: flex; gap: 24px; } 
+
+.tab_inner .swiper-container .swiper-image .fx-img-left { background-color: #fff; height: 100%; flex: 1; box-sizing: border-box; cursor: pointer; border: 3px solid #999; border-radius: 20px; width: 588px; position: relative; display: flex; flex-direction: column; height: 100%; overflow: hidden; } 
+
+
+.tab_inner .swiper-container .swiper-image .fx-img-right { background-color: #fff; height: 100%; flex: 1; box-sizing: border-box; cursor: pointer; border: 3px solid #999; border-radius: 20px; position: relative; width: 588px; position: relative; display: flex; flex-direction: column; height: 100%; overflow: hidden; } 
+
+
+.tab_inner .swiper-container .swiper-button-wrap { position: absolute; top: 50%; left: 0; right: 0; max-width: 1200px; margin: 0 auto; width: 100%; } 
+
+.tab_inner .swiper-container .swiper-button-wrap .swiper-button-next { right: -6%; width: 40px; height: 54px; } 
+
+.tab_inner .swiper-container .swiper-button-wrap .swiper-button-prev { left: -6%; width: 40px; height: 54px; } 
+
+.tab_inner .swiper-container .swiper-button-next:after,
+.tab_inner .swiper-container .swiper-button-prev:after { display: none; } 
+
+.tab_inner .swiper-container .swiper-image .image .bgimg_course { background-color: #cccccc; height: 305px; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; border-radius: 18px 18px 0 0; } 
+
+.tab_inner .swiper-container .swiper-image .image .card-body { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; padding: 1.25rem; border-top: 1px solid #ccc}
+
+.tab_inner .swiper-container .swiper-image .image .card-body .card-sub-tit { font-size: 16px; line-height: 24px; font-weight: 500; line-height: 20px; color: #999999; display: inline-block; position: relative; padding-left: 12px; } 
+
+.tab_inner .swiper-container .swiper-image .image .card-body .card-sub-tit::before { content: ''; display: inline-block; background: url('../images/ico-circle-g.svg'); width: 8px; height: 8px; position: absolute; top: 7px; left: 0; } 
+
+.tab_inner .swiper-container .swiper-slide .fx-img-left:hover,
+.tab_inner .swiper-container .swiper-slide .fx-img-right:hover { border: 3px solid #007af5; } 
+
+.tab_inner .swiper-container .swiper-slide .fx-img-left:hover .card-tit,
+.tab_inner .swiper-container .swiper-slide .fx-img-right:hover .card-tit { color: #222; } 
+
+.tab_inner .swiper-container .swiper-slide .fx-img-left:hover .card-sub-tit,
+.tab_inner .swiper-container .swiper-slide .fx-img-right:hover .card-sub-tit { color: #007af5; } 
+
+.tab_inner .swiper-container .swiper-slide a.fx-img-left:hover .card-sub-tit::before,
+.tab_inner .swiper-container .swiper-slide a.fx-img-right:hover .card-sub-tit::before { background: url('../images/ico-circle.svg') no-repeat center 100%; } 
+
+.tab_inner .swiper-container .swiper-image .image .card-body .card-tit { font-size: 24px; line-height: 25px; font-weight: 700; color: #666; margin: 0; width: 100%; padding-top: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } 
+
+.tab_inner .swiper-container .swiper-image .image .card-body p { font-size: 18px; line-height: 26px; margin: 0; color: #999; word-break: keep-all; word-wrap: break-word; font-weight : 400}
+
+.tab_inner .swiper-container .swiper-image .image .card-body hr.new1 { border-top: 1px solid #007AF5; margin: 15px 0 12px 0; } 
+
+/* 20240514 확인 중이다!!. */
+.tab_inner .swiper-container .swiper-slide.swiper-slide-duplicate.swiper-slide-prev .flexslider-overlay,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-prev .flexslider-overlay,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-next .flexslider-overlay { background: rgba(0, 0, 0, 0.4); bottom: 0; content: ""; display: block; height: 100%; left: 0; position: absolute; right: 0; top: 0; width: 100%; z-index: 1; border-radius: 18px; } 
+
+.tab_inner .swiper-container .swiper-slide.swiper-slide-duplicate.swiper-slide-prev .fx-img-left,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-duplicate.swiper-slide-prev .fx-img-right,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-next .fx-img-left,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-next .fx-img-right,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-prev .fx-img-left,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-prev .fx-img-right { border: 3px solid #007af5; } 
+
+.tab_inner .swiper-container .swiper-slide.swiper-slide-duplicate.swiper-slide-prev .fx-img-left .card-body .card-sub-tit,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-duplicate.swiper-slide-prev .fx-img-right .card-body .card-sub-tit,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-next .fx-img-left .card-body .card-sub-tit,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-next .fx-img-right .card-body .card-sub-tit,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-prev .fx-img-left .card-body .card-sub-tit,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-prev .fx-img-right .card-body .card-sub-tit { font-size: 20px; font-weight: 600; color: #007af5; } 
+
+.tab_inner .swiper-container .swiper-slide.swiper-slide-duplicate.swiper-slide-prev .fx-img-left .card-body .card-sub-tit::before,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-duplicate.swiper-slide-prev .fx-img-right .card-body .card-sub-tit::before,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-next .fx-img-left .card-body .card-sub-tit::before,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-next .fx-img-right .card-body .card-sub-tit::before,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-prev .fx-img-left .card-body .card-sub-tit::before,
+.tab_inner .swiper-container .swiper-slide.swiper-slide-prev .fx-img-right .card-body .card-sub-tit::before { content: ''; display: inline-block; background: url('../images/ico-circle.svg'); width: 8px; height: 8px; position: absolute; top: 7px; left: 0; } 
+/* swiper area[e] */

@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+  <title>USG코딩오픈메타캠퍼스</title>
+  <link rel="stylesheet" href="../front/css/style.css" />
+
+  <script src="../front/js/jquery-3.6.0.min.js"></script>
+  <script src="../front/js/index.js"></script>
+  <script src="../front/js/slick.min.js"></script>
+  <script src="../front/js/swiper.js"></script>
+  <script src="../front/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header_container">
+      <div class="hederWrap">
+        <div class="utilWrap">
+          <div class="mo_logobg">
+            <div class="logo mo-logo">
+              <a href="#" title="USG 코딩아카데미" class="logo__usg">
+                <img src="../front/images/logo_new.svg" alt="USG">
+              </a>
+            </div>
+          </div>
+          <div class="util_right">
+            <ul class="nav_item">
+              <li class=""><a href="https://www.youtube.com/@usg_comc" class="icon_sns mrt02" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube">
+                </a>
+                <a href="https://www.instagram.com/p/C706rj3S4Zk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="icon_sns" target="_blank"><img src="../front/images/icon_insta.png" alt="Instagram">
+                </a>
+              </li>
+              <li class="mlf20"><a href="" class="btn_login"> 로그인</a></li>
+              <li class="mlf20"><a href="" class="btn_join">회원가입</a></li>
+              <div class="dropdown">
+                <a class="dropbtn"><span>USG운영자1님</span></a>
+                <div class="dropdown-list">
+                  <a href="#">PCMS 관리</a>
+                  <a href="#">개인정보수정</a>
+                  <a href="#">로그아웃</a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="header">
+          <div class="headerInner">
+            <button type="button" class="opened-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="overlay"></div>
+            <nav class="navbar">
+              <button type="button" class="closed-menu">
+                <img src="../front/images/closed.svg" class="closed-icon" alt="closed">
+              </button>
+              <ul class="menu">
+                <li class="menu-item mobilemember">
+                  <div class="memberArea">
+                    <a href="" class="member_box login">login</a>
+                    <a href="" class="member_box join">회원가입</a>
+                  </div>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="/common/about.do" data-toggle="sub-menu" class="btn-toggle">About<i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">캠퍼스 소개</a></li>
+                    <li class="menu-item"><a href="#">CI 소개</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-no-children"><a href="#">강좌소개</a></li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu" class="btn-toggle">교육과정<i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#" class="plfrt05">클라우드 비즈니스 솔루션</a></li>
+                    <li class="menu-item"><a href="#">플랫폼 비즈니스 과정</a></li>
+                    <li class="menu-item"><a href="#">산업디지털트윈 과정</a></li>
+                    <li class="menu-item"><a href="#">첨단 제조업 과정</a></li>
+                    <li class="menu-item"><a href="#">부트캠프 과정</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-no-children"><a href="#">교수소개</a></li>
+                <li class="menu-item menu-item-no-children"><a href="#">나의 강의실</a></li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu" class="btn-toggle">캠퍼스 소식 <i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">FAQ</a></li>
+                    <li class="menu-item"><a href="#">문의하기</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">공지사항 <i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#"> 교육생 모집안내</a></li>
+                    <li class="menu-item"><a href="#">플랫폼 비즈니스 과정</a></li>
+                    <li class="menu-item"><a href="#">산업디지털트윈 과정</a></li>
+                    <li class="menu-item"><a href="#">첨단 제조업 과정</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-no-children"><a href="#"><img src="../front/images/menu.svg" alt="사이트맵" class="sitemap"><span class="site_span"> 사이트맵 </span></a></li>
+                <li class="menu-item flx-end">
+                  <ul>
+                    <li class="snsWrap">
+                      <a href="https://www.youtube.com/@usg_comc" class="bg_none mo-youtube" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube"><span class="site_span"></span></a>
+                      <a href="https://www.instagram.com/p/C706rj3S4Zk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="bg_none" target="_blank"><img src="../front/images/icon_insta.png" alt="Instagram"><span class="site_span"></span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contents mo_contents">
+      <section class="visual">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide tp1">
+              <div class="vslCntBox innWrap">
+                <div class="visual_area">
+                  <h3 data-swiper-parallax="-5000">교육 플랫폼의 혁신!</h3>
+                  <h2 data-swiper-parallax="-4000">USG코딩오픈메타캠퍼스</h2>
+                  <p class="lineTxt" data-swiper-parallax="-3000"><span>AWS(아마존웹서비스) 및 MS(마이크로소프트) 전문가가 참여합니다.</span></p>
+                </div>
+                <img class="img_float" src="../front/images/img_banner01.png" alt="img1">
+              </div>
+            </div>
+            <div class="swiper-slide tp2">
+              <div class="vslCntBox innWrap">
+                <div class="visual_area">
+                  <h4 data-swiper-parallax="-5000">
+                    AWS(아마존웹서비스)와 MS(마이크로소프트)사 국제공인자격증 교육과정을 <p class="pt10">무료로 듣고 자격증을 취득할 수 있는 경남 유일의 코딩 교육 캠퍼스</p>
+                  </h4>
+                  <h2 data-swiper-parallax="-4000">USG코딩오픈메타캠퍼스</h2>
+                </div>
+                <img class="img_float" src="../front/images/img_banner02.png" alt="img2">
+              </div>
+            </div>
+            <div class="swiper-slide tp3">
+              <div class="vslCntBox innWrap">
+                <div class="visual_area">
+                  <h3 data-swiper-parallax="-5000" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                    <p>지역소재 대기업 및 중견기업 전문가가</p>
+                    <p class="pt10">직접 가르치기 때문에 취업에 유리한</p>
+                  </h3>
+                  <h2 data-swiper-parallax="-4000" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">USG코딩오픈메타캠퍼스</h2>
+                </div>
+                <img class="img_float" src="../front/images/img_banner03.png" alt="img3">
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-wrap">
+            <div class="swiper-button-prev"><img class="imgtest" src="../front/images/arrow_left-wt.svg"></div>
+            <div class="swiper-button-next"><img src="../front/images/arrow_right_wt.svg"></div>
+          </div>
+
+          <div class="swiper_controller">
+            <div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div style="margin-left: 20px;">
+              <div class="swiper-button-area">
+                <button class="play toggle"><i class="icons i_play"></i></button>
+                <button class="stop toggle"><i class="icons i_stop"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  강좌소개  -->
+      <section class="courseInfo">
+        <div class="titWrap">
+          <div class="titArea">
+            <h1 class="title_lg">강좌<span>소개</span></h1>
+            <a href="#" class="txt_total">전체보기</a>
+          </div>
+        </div>
+
+        <div class="tab_menu">
+          <div class="tabWrap">
+            <ul class="tab">
+              <li class="tab_item active">플랫폼 비즈니스</li>
+              <li class="tab_item">산업디지털트윈</li>
+              <li class="tab_item">첨단 제조업</li>
+            </ul>
+          </div>
+          <div class="tab_inner_wrap">
+            <div class="tab_inner n1 active">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <div class="swiper-image">
+                      <div class="image">
+                        <a class="fx-img-left">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_04.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">조선해양DX 기술 교육 과정(1) BIG Data(심화)</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                        <a class="fx-img-right">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_02.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">DX기획과정(2) 데이터 문해력</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2023.12.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <div class="swiper-image">
+                      <div class="image">
+                        <a class="fx-img-left">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_01.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">조선해양DX 기술 교육 과정(1) BIG Data(심화)</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                        <a class="fx-img-right">
+                          <span class="flexslider-overlay"></span>
+                          <div style="position: relative;display: flex;flex-direction: column;height:100%;">
+                            <img src="../front/images/img_con_02.jpg" class="bgimg_course">
+                            <div class="card-body">
+                              <span class="card-sub-tit">산업디지털트윈</span>
+                              <h4 class="card-tit">DX기획과정(2) 데이터 문해력</h4>
+                              <hr class="new1">
+                              <p>신청기간 : 2023.12.01 ~ 2023.12.31</p>
+                              <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                              <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide">
+                    <div class="swiper-image">
+                      <div class="image">
+                        <a class="fx-img-left">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_03.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">조선해양DX 기술 교육 과정(1) BIG Data(심화)</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                        <a class="fx-img-right">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_04.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">DX기획과정(2) 데이터 문해력</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2023.12.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-wrap">
+                  <div class="swiper-button-prev"><img class="imgtest" src="../front/images/arrow_left-blue.svg"></div>
+                  <div class="swiper-button-next"><img src="../front/images/arrow_right-blue.svg"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tab_inner n2">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <div class="swiper-image">
+                      <div class="image">
+                        <a class="fx-img-left">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_06.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">조선해양DX 기술 교육 과정(1) BIG Data(심화)</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                        <a class="fx-img-right">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_05.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">DX기획과정(2) 데이터 문해력</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2023.12.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <div class="swiper-image">
+                      <div class="image">
+                        <a class="fx-img-left">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_04.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">조선해양DX 기술 교육 과정(1) BIG Data(심화)</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                        <a class="fx-img-right">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_03.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">DX기획과정(2) 데이터 문해력</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2023.12.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide">
+                    <div class="swiper-image">
+                      <div class="image">
+                        <a class="fx-img-left">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_02.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">조선해양DX 기술 교육 과정(1) BIG Data(심화)</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                        <a class="fx-img-right">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_01.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">DX기획과정(2) 데이터 문해력</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2023.12.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-wrap">
+                  <div class="swiper-button-prev"><img class="imgtest" src="../front/images/arrow_left-blue.svg"></div>
+                  <div class="swiper-button-next"><img src="../front/images/arrow_right-blue.svg"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tab_inner n3">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <div class="swiper-image">
+                      <div class="image">
+                        <a class="fx-img-left">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_03.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">조선해양DX 기술 교육 과정(1) BIG Data(심화)</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                        <a class="fx-img-right">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_04.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">DX기획과정(2) 데이터 문해력</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2023.12.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <div class="swiper-image">
+                      <div class="image">
+                        <a class="fx-img-left">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_05.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">조선해양DX 기술 교육 과정(1) BIG Data(심화)</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                        <a class="fx-img-right">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_06.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">DX기획과정(2) 데이터 문해력</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2023.12.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide">
+                    <div class="swiper-image">
+                      <div class="image">
+                        <a class="fx-img-left">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_01.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">조선해양DX 기술 교육 과정(1) BIG Data(심화)</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                        <a class="fx-img-right">
+                          <span class="flexslider-overlay"></span>
+                          <img src="../front/images/img_con_02.jpg" class="bgimg_course">
+                          <div class="card-body">
+                            <span class="card-sub-tit">산업디지털트윈</span>
+                            <h4 class="card-tit">DX기획과정(2) 데이터 문해력</h4>
+                            <hr class="new1">
+                            <p>신청기간 : 2023.12.01 ~ 2023.12.31</p>
+                            <p>수강기간 : 2023.12.01 ~ 2024.01.31</p>
+                            <p>교수자 : cateacher1, cateacher2, IGM강사, 손청하</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-wrap">
+                  <div class="swiper-button-prev"><img class="imgtest" src="../front/images/arrow_left-blue.svg"></div>
+                  <div class="swiper-button-next"><img src="../front/images/arrow_right-blue.svg"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  교육 과정 소개  -->
+      <section class="courseInfo bg_lightblue">
+        <div class="trainingWrap">
+          <div class="titWrap">
+            <div class="titArea">
+              <h1 class="title_lg">교육 과정 <span>소개</span></h1>
+              <a href="#" class="txt_total">전체보기</a>
+            </div>
+          </div>
+
+          <div class="elementor-wrap">
+            <ul class="elementor-container">
+              <li class="elementor-card">
+                <a href="#" class="img04 SoftBlue">
+                  <h2 class="head_tit SoftBlue">클라우드 비즈니스 솔루션</h2>
+                  <img src="../front/images/img_default_04.png" alt="img04" class="mt24">
+                  <p class="sub_tit"><span>실제 업무 기반의 비즈니스</span> <span> 솔루션 교육과 실습을 통해 </span><span>기업 실무 수행 역량을</span><span>향상시킬 수 있습니다.</span> </p>
+                </a>
+              </li>
+              <li class="elementor-card">
+                <a href="#" class="img01 on">
+                  <h2 class="head_tit">플랫폼 비즈니스</h2>
+                  <img src="../front/images/img_default_01.png" alt="img01 " class="mt24">
+                  <p class="sub_tit"><span>현직에 있는 실무자들이 멘토가</span> <span> 되어 하나의 프로젝트를</span><span>같이 수행하며 노하우를</span><span>전수해 드립니다.</span> </p>
+                </a>
+              </li>
+              <li class="elementor-card">
+                <a href="#" class="img02 purple">
+                  <h2 class="head_tit purple">산업 디지털 트윈 </h2>
+                  <img src="../front/images/img_default_02.png" alt="img02" class="mt24">
+                  <p class="sub_tit"><span>현직에 있는 실무자들이</span> <span>멘토가 되어 하나의 프로젝트를</span><span>같이 수행하며 노하우를</span><span>전수해 드립니다.</span> </p>
+
+                </a>
+              </li>
+              <li class="elementor-card">
+                <a href="#" class="img03 skyblue">
+                  <h2 class="head_tit skyblue">첨단 제조업</h2>
+                  <img src="../front/images/img_default_03.png" alt="img03" class="mt24">
+                  <p class="sub_tit"><span>실무 현장에서 실제로 사용하는</span> <span> CI/CD 실습환경을 제공하여 </span><span>프로젝트 프로세스를</span><span>직접 경험할 수 있습니다.</span> </p>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--  공지사항  -->
+      <section class="courseInfo">
+        <div class="trainingWrap">
+          <div class="titWrap">
+            <div class="titArea">
+              <h1 class="title_lg">강좌<span>소개</span></h1>
+              <a href="#" class="txt_total">전체보기</a>
+            </div>
+          </div>
+          <div class="innWrapA subTab01">
+            <div class="flex">
+              <div class="nav">
+                <ul>
+                  <li><a href="#tab01" class="tit_test">교육생 모집안내</a></li>
+                  <li><a href="#tab02">플랫폼 비즈니스 과정</a></li>
+                  <li><a href="#tab03" class="tit_test">산업 디지털트윈 과정</a></li>
+                  <li><a href="#tab04">첨단 제조업 과정</a></li>
+                </ul>
+              </div>
+              <div class="con">
+                <div id="tab01">
+                  <div class="lineBox">
+                    <div class="searchBox-select">
+                      <ul class="select-inner" OnClick="location.href ='#'" style="cursor:pointer;">
+                        <li class="date">
+                          <a href="" class="date_inner">
+                            <p class="day">08</p>
+                            <p class="yearmonth">24.01</p>
+                          </a>
+                        </li>
+                        <li><a href="" class="notice_tit">USG코딩오픈메타캠퍼스 기업체 협력모델 본과정 프로그램 제1기 교육생 모집현황</a></li>
+                        <li class="arrow mlf_auto"><img class="img_float" src="../front/images/ico_arrow_long.svg" alt="arrow"></li>
+                      </ul>
+                      <hr class="new3">
+                      <ul class="select-inner" OnClick="location.href ='#'" style="cursor:pointer;">
+                        <li class="date">
+                          <a href="" class="date_inner">
+                            <p class="day">31</p>
+                            <p class="yearmonth">24.01</p>
+                          </a>
+                        </li>
+                        <li><a href="" class="notice_tit">[홍보영상]_USG코딩오픈메타캠퍼스 기업체 협력모델 교육프로그램(산업디지털트윈)</a></li>
+                        <li class="arrow mlf_auto"><img class="img_float" src="../front/images/ico_arrow_long.svg" alt="arrow"></li>
+                      </ul>
+                      <hr class="new3">
+                      <ul class="select-inner" OnClick="location.href ='#'" style="cursor:pointer;">
+                        <li class="date">
+                          <a href="" class="date_inner">
+                            <p class="day">31</p>
+                            <p class="yearmonth">24.01</p>
+                          </a>
+                        </li>
+                        <li><a href="" class="notice_tit">[홍보영상]_USG코딩오픈메타캠퍼스 기업체 협력모델 교육프로그램(첨단 제조업)</a></li>
+                        <li class="arrow mlf_auto"><img class="img_float" src="../front/images/ico_arrow_long.svg" alt="arrow"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab02">
+                  <div class="lineBox">
+                    <div class="searchBox-select">
+                      <ul class="select-inner">
+                        <li class="date">
+                          <a href="">
+                            <p class="day">09</p>
+                            <p class="yearmonth">24.01</p>
+                          </a>
+                        </li>
+                        <li><a href="" class="notice_tit">USG코딩오픈메타캠퍼스 기업체 협력모델 본과정 프로그램 제1기 교육생 모집현황</a></li>
+                        <li class="arrow"><img class="img_float" src="../front/images/ico_arrow_long.svg" alt="arrow"></li>
+                      </ul>
+                      <hr class="new3">
+                      <ul class="select-inner">
+                        <li class="date">
+                          <a href="">
+                            <p class="day">20</p>
+                            <p class="yearmonth">24.01</p>
+                          </a>
+                        </li>
+                        <li><a href="" class="notice_tit">[홍보영상]_USG코딩오픈메타캠퍼스 기업체 협력모델 교육프로그램(산업디지털트윈)</a></li>
+                        <li class="arrow"><img class="img_float" src="../front/images/ico_arrow_long.svg" alt="arrow"></li>
+                      </ul>
+                      <hr class="new3">
+                      <ul class="select-inner">
+                        <li class="date">
+                          <a href="">
+                            <p class="day">25</p>
+                            <p class="yearmonth">24.01</p>
+                          </a>
+                        </li>
+                        <li><a href="" class="notice_tit">[홍보영상]_USG코딩오픈메타캠퍼스 기업체 협력모델 교육프로그램(첨단 제조업)</a></li>
+                        <li class="arrow"><img class="img_float" src="../front/images/ico_arrow_long.svg" alt="arrow"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab03">
+                  1213121
+                </div>
+                <div id="tab04">
+                  12132322323
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="footerWrap">
+      <section>
+        <div class="util_link_outer">
+          <div class="util_link">
+            <div class="util_link_list footer_autoplay" style="margin-bottom:0px;">
+              <!-- 교육부, 한국연구재단, 울산경남지역혁신플랫폼, 경상남도, 울산광역시, 경남대학교, 울산경남지역혁신플랫폼 ict -->
+              <a href="https://www.moe.go.kr/main.do?s=moe" target="_blank" class="util_link_item"><img src="../front/images/logo_moe.png" class="util_link_img" alt="교육부"></a>
+              <a href="https://www.nrf.re.kr/index" target="_blank" class="util_link_item"><img src="../front/images/logo_nrf.png" class="util_link_img" alt="한국연구재단"></a>
+              <a href="http://gn-platform.or.kr/main.do" target="_blank" class="util_link_item"><img src="../front/images/logo_platform.png" class="util_link_img" alt="울산·경남지역혁신플랫폼"></a>
+              <a href="https://www.gyeongnam.go.kr/index.gyeong" target="_blank" class="util_link_item"><img src="../front/images/logo_gyeongnam.png" class="util_link_img" alt="경상남도"></a>
+              <a href="https://www.ulsan.go.kr/u/rep/main.ulsan" target="_blank" class="util_link_item"><img src="../front/images/logo_ulsan.png" class="util_link_img" alt="울산광역시"></a>
+              <a href="https://www.kyungnam.ac.kr" target="_blank" class="util_link_item"><img src="../front/images/logo_kyungnam_univ.png" class="util_link_img" alt="경남대학교"></a>
+              <a href="https://platform.kyungnam.ac.kr/kr/" target="_blank" class="util_link_item"><img src="../front/images/logo_ict.png" class="util_link_img" alt="울산·경남지역혁신플랫폼 스마트제조ICT사업단"></a>
+            </div>
+            <div class="arrow prev" id="footer_arrow_prev"><span class="arrow_hidden">prev</span></div>
+            <div class="arrow next" id="footer_arrow_next"><span class="arrow_hidden">next</span></div>
+          </div>
+        </div>
+        <div id="footer">
+          <div class="inner">
+            <div class="footer_logoArea">
+              <div class="foot_logo"><img src="../front/images/logo_footer.svg" alt="USG코딩오픈메타캠퍼스"></div>
+              <div class="tail_menu">
+                <ul>
+                  <li><a href="javascript:void(0);" onclick="gnbMenuAction('/common/privacyTerms.do')" class="color_orange">개인정보처리방침</a></li>
+                  <li><a href="javascript:void(0);" onclick="gnbMenuAction('/common/useTerms.do')">이용약관</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tail_menu">
+            </div>
+            <div class="addr">
+              <p class="txt_add">(51767 ) 경상남도 창원시 마산합포구 경남대학로 7 창조관 3층 스마트제조ICT사업단 (USG코딩오픈메타캠퍼스)</p>
+              <p class="copyright mt20 mt15">USG코딩오픈메타캠퍼스 센터는 경남대학교가 운영하고 있으며, 교육 및 업무에 대한 모든 책임은 경남대학교에 있습니다.</p>
+              <p class="copyright mt05">Copyrightⓒ USG코딩오픈메타캠퍼스 센터 ALL RIGHT RESERVED</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="../front/js/menu.js"></script>
+
+  <script>
+    // $('.menu-item a.btn-test').on('click', function () {
+    //   $('.menu-item a.btn-test').removeClass('selected');
+    //   $(this).addClass('selected');
+    // });
+  </script>
+
+
+</body>
+
+</html>

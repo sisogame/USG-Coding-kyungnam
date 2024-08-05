@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+  <title>USG코딩오픈메타캠퍼스</title>
+  <link rel="stylesheet" href="../front/css/style.css" />
+  <!-- AOS 라이브러리 불러오기-->
+  <script src="../front/js/jquery-3.6.0.min.js"></script>
+  <script src="../front/js/aos.js"></script>
+  <script src="../front/js/index.js"></script>
+  <script src="../front/js/slick.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header_container">
+      <div class="hederWrap">
+        <div class="utilWrap">
+          <div class="mo_logobg">
+            <div class="logo mo-logo">
+              <a href="#" title="USG 코딩아카데미" class="logo__usg">
+                <img src="../front/images/logo_new.svg" alt="USG">
+              </a>
+            </div>
+          </div>
+          <div class="util_right">
+            <ul class="nav_item">
+              <li class=""><a href="https://www.youtube.com/@usg_comc" class="icon_sns mrt02" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube">
+                </a>
+                <a href="https://www.instagram.com/p/C706rj3S4Zk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="icon_sns" target="_blank"><img src="../front/images/icon_insta.png" alt="Instagram">
+                </a>
+              </li>
+              <li class="mlf20"><a href="" class="btn_login"> 로그인</a></li>
+              <li class="mlf20"><a href="" class="btn_join">회원가입</a></li>
+              <div class="dropdown">
+                <a class="dropbtn"><span>USG운영자1님</span></a>
+                <div class="dropdown-list">
+                  <a href="#">PCMS 관리</a>
+                  <a href="#">개인정보수정</a>
+                  <a href="#">로그아웃</a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="header">
+          <div class="headerInner">
+            <button type="button" class="opened-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="overlay"></div>
+            <nav class="navbar">
+              <button type="button" class="closed-menu">
+                <img src="../front/images/closed.svg" class="closed-icon" alt="closed">
+              </button>
+              <ul class="menu">
+                <li class="menu-item mobilemember">
+                  <div class="memberArea">
+                    <a href="" class="member_box login">login</a>
+                    <a href="" class="member_box join">회원가입</a>
+                  </div>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="/common/about.do" data-toggle="sub-menu">About<i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">캠퍼스 소개</a></li>
+                    <li class="menu-item"><a href="#">CI 소개</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#">강좌소개</a></li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">교육과정<i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#" class="plfrt05">클라우드 비즈니스 솔루션</a></li>
+                    <li class="menu-item"><a href="#">플랫폼 비즈니스 과정</a></li>
+                    <li class="menu-item"><a href="#">산업디지털트윈 과정</a></li>
+                    <li class="menu-item"><a href="#">첨단 제조업 과정</a></li>
+                    <li class="menu-item"><a href="#">부트캠프 과정</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#">교수소개</a></li>
+                <li class="menu-item"><a href="#">나의 강의실</a></li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">캠퍼스 소식 <i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">FAQ</a></li>
+                    <li class="menu-item"><a href="#">문의하기</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">공지사항 <i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#"> 교육생 모집안내</a></li>
+                    <li class="menu-item"><a href="#">플랫폼 비즈니스 과정</a></li>
+                    <li class="menu-item"><a href="#">산업디지털트윈 과정</a></li>
+                    <li class="menu-item"><a href="#">첨단 제조업 과정</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#"><img src="../front/images/menu.svg" alt="사이트맵" class="sitemap"><span class="site_span"> 사이트맵 </span></a></li>
+                <li class="menu-item flx-end">
+                  <ul>
+                    <li class="snsWrap">
+                      <a href="https://www.youtube.com/@usg_comc" class="bg_none mo-youtube" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube"><span class="site_span"></span></a>
+                      <a href="https://www.instagram.com/p/C706rj3S4Zk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="bg_none" target="_blank"><img src="../front/images/icon_insta.png" alt="Instagram"><span class="site_span"></span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contentBody">
+      <!-- 컨텐츠가 들어갈 부분 -->
+      <div class="subContent">
+        <div class="subBody education">
+          <div class="subcontent edu-digital edu-bootcamp">
+            <section class="secEdu bg-bootcamp">
+              <div class="flex-wrap" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="top-edutit">본 과정을 수강할 미래 인재를 양성하는<span> 부트캠프 과정</span></h3>
+                <img src="../front/images/img_bootcamp.svg" class="img-manage" alt="">
+              </div>
+            </section>
+            <section class="edu-signature inner">
+              <h4 class="edu-tit" data-aos="fade-up" data-aos-delay="200">교육과정의 주제</h4>
+              <div>
+                <ul class="flex-wrap" data-aos="fade-up" data-aos-delay="300">
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">HTML/CSS/자바스크립트</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList"> 
+                        <li class="list-tit">데이터베이스(오픈소스SW활용)</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">JAVA</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">Spring MVC와 <br> Spring Boot</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">실무SW공학 <br> (MS-TFS, Git, SVN, Jenkins, 마이크로서비스)</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">SQL(기초 및 응용)</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">RESTFul, SAP-RFC</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">C#프로그래밍</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">.NET프로그래밍</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">C++</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">MFC 프로그래밍</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">Python프로그래밍</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">3D Graphics</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">인공지능</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">CAD/PLM이론</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">클라우드 시스템 <br>(도커, 쿠버네티스)</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">제조업 이해를 위한 FS <br> (Factory Scheduler)</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">제조업 이해를 위한 RTD <br> (Real Time Dispatcher)</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">제조업 이해를 위한 RMS <br> (Recipe Management System)</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">제조업 이해를 위한 SPC <br> (Statistical Process Control)</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">제조업 이해를 위한 DH <br> (Data Hub)</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">제조업 이해를 위한 FMB <br> (Factory Management Board)</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">제조업 이해를 위한 FPA <br> (Factory Performance Analyzer)</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">알고리즘 자료구조</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">IoT&네트워크</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">이산수학</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">확률&통계학</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="eduBox">
+                    <a href="#">
+                      <ul class="eduList">
+                        <li class="list-tit">C프로그래밍</li>
+                      </ul>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    <!-- 컨텐츠가 들어갈 부분 eee -->
+    </div>
+    <div class="footerWrap">
+      <section>
+        <div class="util_link_outer">
+          <div class="util_link">
+            <div class="util_link_list footer_autoplay" style="margin-bottom:0px;">
+              <!-- 교육부, 한국연구재단, 울산경남지역혁신플랫폼, 경상남도, 울산광역시, 경남대학교, 울산경남지역혁신플랫폼 ict -->
+              <a href="https://www.moe.go.kr/main.do?s=moe" target="_blank" class="util_link_item"><img src="../front/images/logo_moe.png" class="util_link_img" alt="교육부"></a>
+              <a href="https://www.nrf.re.kr/index" target="_blank" class="util_link_item"><img src="../front/images/logo_nrf.png" class="util_link_img" alt="한국연구재단"></a>
+              <a href="http://gn-platform.or.kr/main.do" target="_blank" class="util_link_item"><img src="../front/images/logo_platform.png" class="util_link_img" alt="울산·경남지역혁신플랫폼"></a>
+              <a href="https://www.gyeongnam.go.kr/index.gyeong" target="_blank" class="util_link_item"><img src="../front/images/logo_gyeongnam.png" class="util_link_img" alt="경상남도"></a>
+              <a href="https://www.ulsan.go.kr/u/rep/main.ulsan" target="_blank" class="util_link_item"><img src="../front/images/logo_ulsan.png" class="util_link_img" alt="울산광역시"></a>
+              <a href="https://www.kyungnam.ac.kr" target="_blank" class="util_link_item"><img src="../front/images/logo_kyungnam_univ.png" class="util_link_img" alt="경남대학교"></a>
+              <a href="https://platform.kyungnam.ac.kr/kr/" target="_blank" class="util_link_item"><img src="../front/images/logo_ict.png" class="util_link_img" alt="울산·경남지역혁신플랫폼 스마트제조ICT사업단"></a>
+            </div>
+            <div class="arrow prev" id="footer_arrow_prev"><span class="arrow_hidden">prev</span></div>
+            <div class="arrow next" id="footer_arrow_next"><span class="arrow_hidden">next</span></div>
+          </div>
+        </div>
+        <div id="footer">
+          <div class="inner">
+            <div class="footer_logoArea">
+              <div class="foot_logo"><img src="../front/images/logo_footer.svg" alt="USG코딩오픈메타캠퍼스"></div>
+              <div class="tail_menu">
+                <ul>
+                  <li><a href="javascript:void(0);" onclick="gnbMenuAction('/common/privacyTerms.do')" class="color_orange">개인정보처리방침</a></li>
+                  <li><a href="javascript:void(0);" onclick="gnbMenuAction('/common/useTerms.do')">이용약관</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tail_menu">
+            </div>
+            <div class="addr">
+              <p class="txt_add">(51767 ) 경상남도 창원시 마산합포구 경남대학로 7 창조관 3층 스마트제조ICT사업단 (USG코딩오픈메타캠퍼스)</p>
+              <p class="copyright mt20 mt15">USG코딩오픈메타캠퍼스 센터는 경남대학교가 운영하고 있으며, 교육 및 업무에 대한 모든 책임은 경남대학교에 있습니다.</p>
+              <p class="copyright mt05">Copyrightⓒ USG코딩오픈메타캠퍼스 센터 ALL RIGHT RESERVED</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="../front/js/menu.js"></script>
+  
+  <script> 
+    AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+  </script>
+</body>
+</html>

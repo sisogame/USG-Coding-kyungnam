@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+  <title>USG코딩오픈메타캠퍼스</title>
+  <link rel="stylesheet" href="../front/css/style.css" />
+  <!-- AOS 라이브러리 불러오기-->
+  <script src="../front/js/jquery-3.6.0.min.js"></script>
+  <script src="../front/js/aos.js"></script>
+  <script src="../front/js/index.js"></script>
+  <script src="../front/js/slick.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header_container">
+      <div class="hederWrap">
+        <div class="utilWrap">
+          <div class="mo_logobg">
+            <div class="logo mo-logo">
+              <a href="#" title="USG 코딩아카데미" class="logo__usg">
+                <img src="../front/images/logo_new.svg" alt="USG">
+              </a>
+            </div>
+          </div>
+          <div class="util_right">
+            <ul class="nav_item">
+              <li class=""><a href="https://www.youtube.com/@usg_comc" class="icon_sns mrt02" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube">
+                </a>
+                <a href="https://www.instagram.com/p/C706rj3S4Zk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="icon_sns" target="_blank"><img src="../front/images/icon_insta.png" alt="Instagram">
+                </a>
+              </li>
+              <li class="mlf20"><a href="" class="btn_login"> 로그인</a></li>
+              <li class="mlf20"><a href="" class="btn_join">회원가입</a></li>
+              <div class="dropdown">
+                <a class="dropbtn"><span>USG운영자1님</span></a>
+                <div class="dropdown-list">
+                  <a href="#">PCMS 관리</a>
+                  <a href="#">개인정보수정</a>
+                  <a href="#">로그아웃</a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="header">
+          <div class="headerInner">
+            <button type="button" class="opened-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="overlay"></div>
+            <nav class="navbar">
+              <button type="button" class="closed-menu">
+                <img src="../front/images/closed.svg" class="closed-icon" alt="closed">
+              </button>
+              <ul class="menu">
+                <li class="menu-item mobilemember">
+                  <div class="memberArea">
+                    <a href="" class="member_box login">login</a>
+                    <a href="" class="member_box join">회원가입</a>
+                  </div>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="/common/about.do" data-toggle="sub-menu">About<i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">캠퍼스 소개</a></li>
+                    <li class="menu-item"><a href="#">CI 소개</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#">강좌소개</a></li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">교육과정<i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#" class="plfrt05">클라우드 비즈니스 솔루션</a></li>
+                    <li class="menu-item"><a href="#">플랫폼 비즈니스 과정</a></li>
+                    <li class="menu-item"><a href="#">산업디지털트윈 과정</a></li>
+                    <li class="menu-item"><a href="#">첨단 제조업 과정</a></li>
+                    <li class="menu-item"><a href="#">부트캠프 과정</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#">교수소개</a></li>
+                <li class="menu-item"><a href="#">나의 강의실</a></li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">캠퍼스 소식 <i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">FAQ</a></li>
+                    <li class="menu-item"><a href="#">문의하기</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">공지사항 <i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#"> 교육생 모집안내</a></li>
+                    <li class="menu-item"><a href="#">플랫폼 비즈니스 과정</a></li>
+                    <li class="menu-item"><a href="#">산업디지털트윈 과정</a></li>
+                    <li class="menu-item"><a href="#">첨단 제조업 과정</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#"><img src="../front/images/menu.svg" alt="사이트맵" class="sitemap"><span class="site_span"> 사이트맵 </span></a></li>
+                <li class="menu-item flx-end">
+                  <ul>
+                    <li class="snsWrap">
+                      <a href="https://www.youtube.com/@usg_comc" class="bg_none mo-youtube" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube"><span class="site_span"></span></a>
+                      <a href="https://www.instagram.com/p/C706rj3S4Zk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="bg_none" target="_blank"><img src="../front/images/icon_insta.png" alt="Instagram"><span class="site_span"></span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contentBody">
+      <!-- 컨텐츠가 들어갈 부분 -->
+      <div class="subContent">
+        <div class="subBody">
+          <div class="subcontent">
+            <section class="section-fir whiteBg inner">
+              <div class="flex-wrap">
+                <div class="con-left" data-aos="fade-right" data-aos-delay="200">
+                  <h3 class="con-tit">USG코딩오픈메타캠퍼스란?</h3>
+                  <p class="con-tt ttColor">경남 지역민과 기업을 위한 <span>온/오프라인 교육 포털</span>로써 경남 지역민 누구나 자유롭게 참여 가능하고, 지역 내 기업의 전문가들이 참여하는 <span>실무 중심의 교육</span>을 제공하는 <span>경남 유일</span>의 코딩 및 디지털 전환 직무 교육을 담당하는 교육 플랫폼 입니다.</p>
+                </div>
+                <img src="../front/images/img_about_01.png" alt="#" data-aos="zoom-out-left">
+              </div>
+            </section>
+            <section class="section-sec grayBg">
+              <div class="flex-wrap inner">
+                <img src="../front/images/img_about_02.png" alt="#" data-aos="zoom-out-right">
+                <div class="con-right" data-aos="fade-left" data-aos-delay="200">
+                  <h3 class="con-tit">경남 지역민 누구나<br> 온/오프라인에서 자유롭게<br> 참여가 가능합니다</h3>
+                  <p class="con-tt">기업에서 사내 직무 교육 및 디지털 전환 교육으로 활용하는 경우에도 협의 후 무료로 사용 가능합니다.</p>
+                </div>
+              </div>
+            </section>
+            <section class="section-thi whiteBg inner">
+              <div class="flex-wrap">
+                <div class="con-left" data-aos="fade-right" data-aos-delay="200">
+                  <h3 class="con-tit">지역 내 대기업 및 중견기업<br> 전문가들이 참여하는<br> 실무 교육 프로그램이 있습니다</h3>
+                  <p class="con-tt">
+                    USG코딩 오픈 메타캠퍼스에서는 지역 내 대기업 및 중견기업 전문가들이 참여하는 실무 교육 프로그램들과 코딩 및 디지털 전환 교육에 필요한 기초 교육을 제공하는 부트캠프 프로그램이 있습니다. 
+                  </p>
+                </div>
+                <img src="../front/images/img_about_03.png" alt="#" data-aos="zoom-out-left">
+              </div>
+            </section>
+            <section class="section-fou grayBg">
+              <div class="flex-wrap inner">
+                <img src="../front/images/img_about_04.png" alt="" data-aos="zoom-out-right">
+                <div class="con-right" data-aos="fade-left" data-aos-delay="200">
+                  <h3 class="con-tit">언제든지 자유롭게 참여하세요</h3>
+                  <p class="con-tt">USG코딩 오픈 메타캠퍼스는 지역이 요구하는 다양한 교육 프로그램들 개발한 후에 지역민들에게 언제든지 사용가능하도록 제공합니다.</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!-- 컨텐츠가 들어갈 부분 eee -->
+    </div>
+
+    <div class="footerWrap">
+      <section>
+        <div class="util_link_outer">
+          <div class="util_link">
+            <div class="util_link_list footer_autoplay" style="margin-bottom:0px;">
+              <!-- 교육부, 한국연구재단, 울산경남지역혁신플랫폼, 경상남도, 울산광역시, 경남대학교, 울산경남지역혁신플랫폼 ict -->
+              <a href="https://www.moe.go.kr/main.do?s=moe" target="_blank" class="util_link_item"><img src="../front/images/logo_moe.png" class="util_link_img" alt="교육부"></a>
+              <a href="https://www.nrf.re.kr/index" target="_blank" class="util_link_item"><img src="../front/images/logo_nrf.png" class="util_link_img" alt="한국연구재단"></a>
+              <a href="http://gn-platform.or.kr/main.do" target="_blank" class="util_link_item"><img src="../front/images/logo_platform.png" class="util_link_img" alt="울산·경남지역혁신플랫폼"></a>
+              <a href="https://www.gyeongnam.go.kr/index.gyeong" target="_blank" class="util_link_item"><img src="../front/images/logo_gyeongnam.png" class="util_link_img" alt="경상남도"></a>
+              <a href="https://www.ulsan.go.kr/u/rep/main.ulsan" target="_blank" class="util_link_item"><img src="../front/images/logo_ulsan.png" class="util_link_img" alt="울산광역시"></a>
+              <a href="https://www.kyungnam.ac.kr" target="_blank" class="util_link_item"><img src="../front/images/logo_kyungnam_univ.png" class="util_link_img" alt="경남대학교"></a>
+              <a href="https://platform.kyungnam.ac.kr/kr/" target="_blank" class="util_link_item"><img src="../front/images/logo_ict.png" class="util_link_img" alt="울산·경남지역혁신플랫폼 스마트제조ICT사업단"></a>
+            </div>
+            <div class="arrow prev" id="footer_arrow_prev"><span class="arrow_hidden">prev</span></div>
+            <div class="arrow next" id="footer_arrow_next"><span class="arrow_hidden">next</span></div>
+          </div>
+        </div>
+        <div id="footer">
+          <div class="inner">
+            <div class="footer_logoArea">
+              <div class="foot_logo"><img src="../front/images/logo_footer.svg" alt="USG코딩오픈메타캠퍼스"></div>
+              <div class="tail_menu">
+                <ul>
+                  <li><a href="javascript:void(0);" onclick="gnbMenuAction('/common/privacyTerms.do')" class="color_orange">개인정보처리방침</a></li>
+                  <li><a href="javascript:void(0);" onclick="gnbMenuAction('/common/useTerms.do')">이용약관</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tail_menu">
+            </div>
+            <div class="addr">
+              <p class="txt_add">(51767 ) 경상남도 창원시 마산합포구 경남대학로 7 창조관 3층 스마트제조ICT사업단 (USG코딩오픈메타캠퍼스)</p>
+              <p class="copyright mt20 mt15">USG코딩오픈메타캠퍼스 센터는 경남대학교가 운영하고 있으며, 교육 및 업무에 대한 모든 책임은 경남대학교에 있습니다.</p>
+              <p class="copyright mt05">Copyrightⓒ USG코딩오픈메타캠퍼스 센터 ALL RIGHT RESERVED</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="../front/js/menu.js"></script>
+
+  <!-- AOS 스크립트 시작 -->
+  <script>
+    AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+  </script>
+</body>
+
+</html>

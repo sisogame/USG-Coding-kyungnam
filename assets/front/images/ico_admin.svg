@@ -1,0 +1,7 @@
+<svg id="ico_admin" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="사각형_4" data-name="사각형 4" width="20" height="20" fill="none"/>
+  <g id="user_1177568" transform="translate(2 2)">
+    <path id="패스_1" data-name="패스 1" d="M16,8A8,8,0,1,1,8,0,8,8,0,0,1,16,8Zm0,0" fill="#fff"/>
+    <path id="패스_2" data-name="패스 2" d="M96.911,78.952a3.03,3.03,0,1,0-3.638,0A5.2,5.2,0,0,0,89.9,83.813h.938a4.253,4.253,0,0,1,8.506,0h.937a5.2,5.2,0,0,0-3.372-4.861ZM93,76.53a2.092,2.092,0,1,1,2.092,2.092A2.094,2.094,0,0,1,93,76.53Zm0,0" transform="translate(-87.092 -71.204)" fill="#004274"/>
+  </g>
+</svg>

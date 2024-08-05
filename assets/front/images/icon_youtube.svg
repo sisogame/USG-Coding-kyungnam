@@ -1,0 +1,11 @@
+<svg id="icon_youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_4566" data-name="사각형 4566" width="30" height="30" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_10824" data-name="그룹 10824" clip-path="url(#clip-path)">
+    <path id="패스_6137" data-name="패스 6137" d="M30,15A15,15,0,1,1,15,0,15,15,0,0,1,30,15" fill="#da0000"/>
+    <path id="패스_6138" data-name="패스 6138" d="M42.082,38.186a2.5,2.5,0,0,0-1.768-1.768C38.754,36,32.5,36,32.5,36s-6.254,0-7.814.418a2.5,2.5,0,0,0-1.768,1.768,27.927,27.927,0,0,0,0,9.628,2.5,2.5,0,0,0,1.768,1.768C26.246,50,32.5,50,32.5,50s6.254,0,7.814-.418a2.5,2.5,0,0,0,1.768-1.768,27.927,27.927,0,0,0,0-9.628M30.5,46V40l5.2,3Z" transform="translate(-17.5 -28)" fill="#fff"/>
+  </g>
+</svg>

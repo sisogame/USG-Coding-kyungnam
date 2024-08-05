@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+  <title>USG코딩오픈메타캠퍼스</title>
+  <link rel="stylesheet" href="../front/css/style.css" />
+  <!-- AOS 라이브러리 불러오기-->
+  <script src="../front/js/jquery-3.6.0.min.js"></script>
+  <script src="../front/js/aos.js"></script>
+  <script src="../front/js/index.js"></script>
+  <script src="../front/js/slick.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header_container">
+      <div class="hederWrap">
+        <div class="utilWrap">
+          <div class="mo_logobg">
+            <div class="logo mo-logo">
+              <a href="#" title="USG 코딩아카데미" class="logo__usg">
+                <img src="../front/images/logo_new.svg" alt="USG">
+              </a>
+            </div>
+          </div>
+          <div class="util_right">
+            <ul class="nav_item">
+              <li class=""><a href="https://www.youtube.com/@usg_comc" class="icon_sns mrt02" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube">
+                </a>
+                <a href="https://www.instagram.com/p/C706rj3S4Zk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="icon_sns" target="_blank"><img src="../front/images/icon_insta.png" alt="Instagram">
+                </a>
+              </li>
+              <li class="mlf20"><a href="" class="btn_login"> 로그인</a></li>
+              <li class="mlf20"><a href="" class="btn_join">회원가입</a></li>
+              <div class="dropdown">
+                <a class="dropbtn"><span>USG운영자1님</span></a>
+                <div class="dropdown-list">
+                  <a href="#">PCMS 관리</a>
+                  <a href="#">개인정보수정</a>
+                  <a href="#">로그아웃</a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="header">
+          <div class="headerInner">
+            <button type="button" class="opened-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="overlay"></div>
+            <nav class="navbar">
+              <button type="button" class="closed-menu">
+                <img src="../front/images/closed.svg" class="closed-icon" alt="closed">
+              </button>
+              <ul class="menu">
+                <li class="menu-item mobilemember">
+                  <div class="memberArea">
+                    <a href="" class="member_box login">login</a>
+                    <a href="" class="member_box join">회원가입</a>
+                  </div>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="/common/about.do" data-toggle="sub-menu">About<i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">캠퍼스 소개</a></li>
+                    <li class="menu-item"><a href="#">CI 소개</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#">강좌소개</a></li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">교육과정<i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#" class="plfrt05">클라우드 비즈니스 솔루션</a></li>
+                    <li class="menu-item"><a href="#">플랫폼 비즈니스 과정</a></li>
+                    <li class="menu-item"><a href="#">산업디지털트윈 과정</a></li>
+                    <li class="menu-item"><a href="#">첨단 제조업 과정</a></li>
+                    <li class="menu-item"><a href="#">부트캠프 과정</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#">교수소개</a></li>
+                <li class="menu-item"><a href="#">나의 강의실</a></li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">캠퍼스 소식 <i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">FAQ</a></li>
+                    <li class="menu-item"><a href="#">문의하기</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">공지사항 <i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#"> 교육생 모집안내</a></li>
+                    <li class="menu-item"><a href="#">플랫폼 비즈니스 과정</a></li>
+                    <li class="menu-item"><a href="#">산업디지털트윈 과정</a></li>
+                    <li class="menu-item"><a href="#">첨단 제조업 과정</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#"><img src="../front/images/menu.svg" alt="사이트맵" class="sitemap"><span class="site_span"> 사이트맵 </span></a></li>
+                <li class="menu-item flx-end">
+                  <ul>
+                    <li class="snsWrap">
+                      <a href="https://www.youtube.com/@usg_comc" class="bg_none mo-youtube" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube"><span class="site_span"></span></a>
+                      <a href="https://www.instagram.com/p/C706rj3S4Zk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="bg_none" target="_blank"><img src="../front/images/icon_insta.png" alt="Instagram"><span class="site_span"></span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentBody">
+      <!-- 컨텐츠가 들어갈 부분 -->
+      <div class="subContent">
+        <div class="subBody education">
+          <div class="subcontent edu-digital-details">
+            <div class="details-wrap inner">
+              <!-- 모바일용 select 메뉴 -->
+              <select class="mobile-sub-menu">
+                <option value="#box0">[공통 Track] 미래변화 및 디지털 통찰</option>
+                <option value="#box1">[공통 Track] 데이터 문해력</option>
+                <option value="#box2">[공통 Track] 고객경험 통찰 & 문제해결</option>
+                <option value="#box3">[공통 Track] 비즈니스 혁신 워크숍</option>
+                <option value="#box4">[공통 Track] 데이터 분석 및 시각화 과정 엑셀(기본)</option>
+                <option value="#box5">[공통 Track] 데이터 분석 및 시각화 과정 엑셀(심화)</option>
+                <option value="#box6">[공통 Track] Big-data(기본) : 데이터 분석을 위한 Python 기초 문법 학습...</option>
+                <option value="#box7">[공통 Track] Big-data(심화) : 탐색적 분석(EDA)을 위한 Pandas,...</option>
+                <option value="#box8">[TrackA]Power BI활용 시각화 과정</option>
+                <option value="#box9">[TrackA] 조선해양 DX 기술 교육 과정 > VR/AR과정(기본) [기본] AR/VR...</option>
+                <option value="#box10">[TrackA] 조선해양 DX 기술 교육 과정 > VR/AR과정(심화) [심화] 산업현장...</option>
+                <option value="#box11">[TrackA]로봇자동화(RPA) 활용 과정 > 로봇자동화(RPA) 활용 교육 과정...</option>
+                <option value="#box12">[TrackA]로봇자동화(RPA) 활용 과정 > 로봇자동화(RPA) 활용 교육 과정...</option>
+                <option value="#box13">[TrackB]IoT 과정 IoT 기술을 적용한 조선해양업의 인프라 및 플랫폼의 이해</option>
+                <option value="#box14">[TrackA]조선해양 DX 기술 교육 과정 > AI 과정 기본</option>
+                <option value="#box15">[TrackA]조선해양 DX 기술 교육 과정 > AI 과정 심화</option>
+                <option value="#box16">[TrackA]조선해양 DX 기술 교육 과정 > AI 과정 전문가</option>
+              </select>
+              <div class="left-wrap">
+                <ul class="menu-list">
+                  <li>산업디지털트윈 교육과정</li>
+                  <li>
+                    <a href="../pages/digitalDetail1.html">[공통 Track] 미래변화 및 디지털 통찰</a>
+                  </li>
+                  <li><a href="../pages/digitalDetail2.html">[공통 Track] 데이터 문해력</a></li>
+                  <li><a href="../pages/digitalDetail3.html">[공통 Track] 고객경험 통찰 & 문제해결</a></li>
+                  <li><a href="../pages/digitalDetail4.html">[공통 Track] 비즈니스 혁신 워크숍</a></li>
+                  <li><a href="../pages/digitalDetail5.html">[공통 Track] 데이터 분석 및 시각화 과정 엑셀(기본)</a></li>
+                  <li><a href="../pages/digitalDetail6.html">[공통 Track] 데이터 분석 및 시각화 과정 엑셀(심화)</a></li>
+                  <li><a href="../pages/digitalDetail7.html">[공통 Track] Big-data(기본) : 데이터 분석을 위한 Python 기초 문법 학습...</a></li>
+                  <li><a href="../pages/digitalDetail8.html">[공통 Track] Big-data(심화) : 탐색적 분석(EDA)을 위한 Pandas,...</a></li>
+                  <li><a href="../pages/digitalDetail9.html">[TrackA]Power BI활용 시각화 과정</a></li>
+                  <li><a href="../pages/digitalDetail10.html">[TrackA] 조선해양 DX 기술 교육 과정 > VR/AR과정(기본) [기본] AR/VR...</a></li>
+                  <li><a href="../pages/digitalDetail11.html">[TrackA] 조선해양 DX 기술 교육 과정 > VR/AR과정(심화) [심화] 산업현장...</a></li>
+                  <li><a href="../pages/digitalDetail12.html">[TrackA]로봇자동화(RPA) 활용 과정 > 로봇자동화(RPA) 활용 교육 과정...</a></li>
+                  <li><a href="../pages/digitalDetail13.html">[TrackA]로봇자동화(RPA) 활용 과정 > 로봇자동화(RPA) 활용 교육 과정...</a></li>
+                  <li><a href="../pages/digitalDetail14.html">[TrackB]IoT 과정 IoT 기술을 적용한 조선해양업의 인프라 및 플랫폼의 이해</a></li>
+                  <li><a href="../pages/digitalDetail15.html">[TrackA]조선해양 DX 기술 교육 과정 > AI 과정 기본</a></li>
+                  <li><a href="../pages/digitalDetail16.html">[TrackA]조선해양 DX 기술 교육 과정 > AI 과정 심화</a></li>
+                  <li><a href="../pages/digitalDetail17.html">[TrackA]조선해양 DX 기술 교육 과정 > AI 과정 전문가</a></li>
+                </ul>
+              </div>
+              <div class="right-wrap">
+                <h2 class="right-tit">[공통 Track] 비즈니스 혁신 워크숍</h2>
+                <div class="edu-char-wrap">
+                  <h4 class="con-tit">교육과정 특징</h4>
+                  <ul class="char-list">
+                    <li>&middot; 비즈니스의 전체를 이해할 수 있는 Tool을 학습합니다.</li>
+                    <li>&middot; 새롭거나 개선된 비즈니스 모델을 도출할 수 있습니다.</li>
+                  </ul>
+                </div>
+                <div class="edu-loadmap-wrap">
+                  <h4 class="con-tit">교육과정 로드맵</h4>
+                  <div class="flex-wrap">
+                    <div class="loadmap-list">
+                      <ul>
+                        <li>
+                          <div class="stapBox">
+                            <div class="step">1단계</div>
+                            <div class="step-tit">좋은 아이템이
+                              곧 성공한 비즈니스?</div>
+                          </div>
+                        </li>
+                        <li class="step-txt">
+                          <p>&middot; 좋은 아이디어는 왜 이렇게 실패하게 되었는가?
+                          <p class="step-gap">- 아이디어는 좋았으나 사업에 실패한 사례 학습</p>
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="loadmap-list">
+                      <ul>
+                        <li>
+                          <div class="stapBox">
+                            <div class="step">2단계</div>
+                            <div class="step-tit">9Blocks의 이해 및 활용</div>
+                          </div>
+                        </li>
+                        <li class="step-txt">
+                          <p>&middot; 기업이 어떻게 수익을 창출해내는지, 그 원리를 설명해주는
+                            비즈니스의 기본적인 구성요소(9block)의 확인
+                          <p class="step-gap">- 가체제안, 고객세그먼트, 채널, 고객관계, 수익원, 핵심자원, 핵심활동, 핵심파트너, 비용구조</p>
+                          </p>
+                          <p>&middot; 9Block의 활용방안 학습</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="loadmap-list">
+                      <ul>
+                        <li>
+                          <div class="stapBox">
+                            <div class="step">3단계</div>
+                            <div class="step-tit">비즈니스 모델 혁신</div>
+                          </div>
+                        </li>
+                        <li class="step-txt">
+                          <p>&middot; 유니콘 기업 비즈니스 모델 따라잡기
+                          <p class="step-gap"> -가치제공 혁신, 수익모델 혁신, 운영방안 혁신</p>
+                          </p>
+                          <p>&middot; 비즈니스모델 카드를 활용한 비즈니스 모델 혁신</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 컨텐츠가 들어갈 부분 eee -->
+    </div>
+    <div class="footerWrap">
+      <section>
+        <div class="util_link_outer">
+          <div class="util_link">
+            <div class="util_link_list footer_autoplay" style="margin-bottom:0px;">
+              <!-- 교육부, 한국연구재단, 울산경남지역혁신플랫폼, 경상남도, 울산광역시, 경남대학교, 울산경남지역혁신플랫폼 ict -->
+              <a href="https://www.moe.go.kr/main.do?s=moe" target="_blank" class="util_link_item"><img src="../front/images/logo_moe.png" class="util_link_img" alt="교육부"></a>
+              <a href="https://www.nrf.re.kr/index" target="_blank" class="util_link_item"><img src="../front/images/logo_nrf.png" class="util_link_img" alt="한국연구재단"></a>
+              <a href="http://gn-platform.or.kr/main.do" target="_blank" class="util_link_item"><img src="../front/images/logo_platform.png" class="util_link_img" alt="울산·경남지역혁신플랫폼"></a>
+              <a href="https://www.gyeongnam.go.kr/index.gyeong" target="_blank" class="util_link_item"><img src="../front/images/logo_gyeongnam.png" class="util_link_img" alt="경상남도"></a>
+              <a href="https://www.ulsan.go.kr/u/rep/main.ulsan" target="_blank" class="util_link_item"><img src="../front/images/logo_ulsan.png" class="util_link_img" alt="울산광역시"></a>
+              <a href="https://www.kyungnam.ac.kr" target="_blank" class="util_link_item"><img src="../front/images/logo_kyungnam_univ.png" class="util_link_img" alt="경남대학교"></a>
+              <a href="https://platform.kyungnam.ac.kr/kr/" target="_blank" class="util_link_item"><img src="../front/images/logo_ict.png" class="util_link_img" alt="울산·경남지역혁신플랫폼 스마트제조ICT사업단"></a>
+            </div>
+            <div class="arrow prev" id="footer_arrow_prev"><span class="arrow_hidden">prev</span></div>
+            <div class="arrow next" id="footer_arrow_next"><span class="arrow_hidden">next</span></div>
+          </div>
+        </div>
+        <div id="footer">
+          <div class="inner">
+            <div class="footer_logoArea">
+              <div class="foot_logo"><img src="../front/images/logo_footer.svg" alt="USG코딩오픈메타캠퍼스"></div>
+              <div class="tail_menu">
+                <ul>
+                  <li><a href="javascript:void(0);" onclick="gnbMenuAction('/common/privacyTerms.do')" class="color_orange">개인정보처리방침</a></li>
+                  <li><a href="javascript:void(0);" onclick="gnbMenuAction('/common/useTerms.do')">이용약관</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tail_menu">
+            </div>
+            <div class="addr">
+              <p class="txt_add">(51767 ) 경상남도 창원시 마산합포구 경남대학로 7 창조관 3층 스마트제조ICT사업단 (USG코딩오픈메타캠퍼스)</p>
+              <p class="copyright mt20 mt15">USG코딩오픈메타캠퍼스 센터는 경남대학교가 운영하고 있으며, 교육 및 업무에 대한 모든 책임은 경남대학교에 있습니다.</p>
+              <p class="copyright mt05">Copyrightⓒ USG코딩오픈메타캠퍼스 센터 ALL RIGHT RESERVED</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="../front/js/menu.js"></script>
+</body>
+
+</html>

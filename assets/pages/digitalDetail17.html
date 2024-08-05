@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+  <title>USG코딩오픈메타캠퍼스</title>
+  <link rel="stylesheet" href="../front/css/style.css" />
+  <!-- AOS 라이브러리 불러오기-->
+  <script src="../front/js/jquery-3.6.0.min.js"></script>
+  <script src="../front/js/aos.js"></script>
+  <script src="../front/js/index.js"></script>
+  <script src="../front/js/slick.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header_container">
+      <div class="hederWrap">
+        <div class="utilWrap">
+          <div class="mo_logobg">
+            <div class="logo mo-logo">
+              <a href="#" title="USG 코딩아카데미" class="logo__usg">
+                <img src="../front/images/logo_new.svg" alt="USG">
+              </a>
+            </div>
+          </div>
+          <div class="util_right">
+            <ul class="nav_item">
+              <li class=""><a href="https://www.youtube.com/@usg_comc" class="icon_sns mrt02" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube">
+                </a>
+                <a href="https://www.instagram.com/p/C706rj3S4Zk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="icon_sns" target="_blank"><img src="../front/images/icon_insta.png" alt="Instagram">
+                </a>
+              </li>
+              <li class="mlf20"><a href="" class="btn_login"> 로그인</a></li>
+              <li class="mlf20"><a href="" class="btn_join">회원가입</a></li>
+              <div class="dropdown">
+                <a class="dropbtn"><span>USG운영자1님</span></a>
+                <div class="dropdown-list">
+                  <a href="#">PCMS 관리</a>
+                  <a href="#">개인정보수정</a>
+                  <a href="#">로그아웃</a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="header">
+          <div class="headerInner">
+            <button type="button" class="opened-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="overlay"></div>
+            <nav class="navbar">
+              <button type="button" class="closed-menu">
+                <img src="../front/images/closed.svg" class="closed-icon" alt="closed">
+              </button>
+              <ul class="menu">
+                <li class="menu-item mobilemember">
+                  <div class="memberArea">
+                    <a href="" class="member_box login">login</a>
+                    <a href="" class="member_box join">회원가입</a>
+                  </div>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="/common/about.do" data-toggle="sub-menu">About<i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">캠퍼스 소개</a></li>
+                    <li class="menu-item"><a href="#">CI 소개</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#">강좌소개</a></li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">교육과정<i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#" class="plfrt05">클라우드 비즈니스 솔루션</a></li>
+                    <li class="menu-item"><a href="#">플랫폼 비즈니스 과정</a></li>
+                    <li class="menu-item"><a href="#">산업디지털트윈 과정</a></li>
+                    <li class="menu-item"><a href="#">첨단 제조업 과정</a></li>
+                    <li class="menu-item"><a href="#">부트캠프 과정</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#">교수소개</a></li>
+                <li class="menu-item"><a href="#">나의 강의실</a></li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">캠퍼스 소식 <i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">FAQ</a></li>
+                    <li class="menu-item"><a href="#">문의하기</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">공지사항 <i class="expand"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#"> 교육생 모집안내</a></li>
+                    <li class="menu-item"><a href="#">플랫폼 비즈니스 과정</a></li>
+                    <li class="menu-item"><a href="#">산업디지털트윈 과정</a></li>
+                    <li class="menu-item"><a href="#">첨단 제조업 과정</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#"><img src="../front/images/menu.svg" alt="사이트맵" class="sitemap"><span class="site_span"> 사이트맵 </span></a></li>
+                <li class="menu-item flx-end">
+                  <ul>
+                    <li class="snsWrap">
+                      <a href="https://www.youtube.com/@usg_comc" class="bg_none mo-youtube" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube"><span class="site_span"></span></a>
+                      <a href="https://www.instagram.com/p/C706rj3S4Zk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="bg_none" target="_blank"><img src="../front/images/icon_insta.png" alt="Instagram"><span class="site_span"></span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contentBody">
+      <!-- 컨텐츠가 들어갈 부분 -->
+      <div class="subContent">
+        <div class="subBody education">
+          <div class="subcontent edu-digital-details">
+            <div class="details-wrap inner">
+              <!-- 모바일용 select 메뉴 -->
+              <select class="mobile-sub-menu">
+                <option value="#box0">[공통 Track] 미래변화 및 디지털 통찰</option>
+                <option value="#box1">[공통 Track] 데이터 문해력</option>
+                <option value="#box2">[공통 Track] 고객경험 통찰 & 문제해결</option>
+                <option value="#box3">[공통 Track] 비즈니스 혁신 워크숍</option>
+                <option value="#box4">[공통 Track] 데이터 분석 및 시각화 과정 엑셀(기본)</option>
+                <option value="#box5">[공통 Track] 데이터 분석 및 시각화 과정 엑셀(심화)</option>
+                <option value="#box6">[공통 Track] Big-data(기본) : 데이터 분석을 위한 Python 기초 문법 학습...</option>
+                <option value="#box7">[공통 Track] Big-data(심화) : 탐색적 분석(EDA)을 위한 Pandas,...</option>
+                <option value="#box8">[TrackA]Power BI활용 시각화 과정</option>
+                <option value="#box9">[TrackA] 조선해양 DX 기술 교육 과정 > VR/AR과정(기본) [기본] AR/VR...</option>
+                <option value="#box10">[TrackA] 조선해양 DX 기술 교육 과정 > VR/AR과정(심화) [심화] 산업현장...</option>
+                <option value="#box11">[TrackA]로봇자동화(RPA) 활용 과정 > 로봇자동화(RPA) 활용 교육 과정...</option>
+                <option value="#box12">[TrackA]로봇자동화(RPA) 활용 과정 > 로봇자동화(RPA) 활용 교육 과정...</option>
+                <option value="#box13">[TrackB]IoT 과정 IoT 기술을 적용한 조선해양업의 인프라 및 플랫폼의 이해</option>
+                <option value="#box14">[TrackA]조선해양 DX 기술 교육 과정 > AI 과정 기본</option>
+                <option value="#box15">[TrackA]조선해양 DX 기술 교육 과정 > AI 과정 심화</option>
+                <option value="#box16">[TrackA]조선해양 DX 기술 교육 과정 > AI 과정 전문가</option>
+              </select>
+              <div class="left-wrap">
+                <ul class="menu-list">
+                  <li>산업디지털트윈 교육과정</li>
+                  <li>
+                    <a href="../pages/digitalDetail1.html">[공통 Track] 미래변화 및 디지털 통찰</a>
+                  </li>
+                  <li><a href="../pages/digitalDetail2.html">[공통 Track] 데이터 문해력</a></li>
+                  <li><a href="../pages/digitalDetail3.html">[공통 Track] 고객경험 통찰 & 문제해결</a></li>
+                  <li><a href="../pages/digitalDetail4.html">[공통 Track] 비즈니스 혁신 워크숍</a></li>
+                  <li><a href="../pages/digitalDetail5.html">[공통 Track] 데이터 분석 및 시각화 과정 엑셀(기본)</a></li>
+                  <li><a href="../pages/digitalDetail6.html">[공통 Track] 데이터 분석 및 시각화 과정 엑셀(심화)</a></li>
+                  <li><a href="../pages/digitalDetail7.html">[공통 Track] Big-data(기본) : 데이터 분석을 위한 Python 기초 문법 학습...</a></li>
+                  <li><a href="../pages/digitalDetail8.html">[공통 Track] Big-data(심화) : 탐색적 분석(EDA)을 위한 Pandas,...</a></li>
+                  <li><a href="../pages/digitalDetail9.html">[TrackA]Power BI활용 시각화 과정</a></li>
+                  <li><a href="../pages/digitalDetail10.html">[TrackA] 조선해양 DX 기술 교육 과정 > VR/AR과정(기본) [기본] AR/VR...</a></li>
+                  <li><a href="../pages/digitalDetail11.html">[TrackA] 조선해양 DX 기술 교육 과정 > VR/AR과정(심화) [심화] 산업현장...</a></li>
+                  <li><a href="../pages/digitalDetail12.html">[TrackA]로봇자동화(RPA) 활용 과정 > 로봇자동화(RPA) 활용 교육 과정...</a></li>
+                  <li><a href="../pages/digitalDetail13.html">[TrackA]로봇자동화(RPA) 활용 과정 > 로봇자동화(RPA) 활용 교육 과정...</a></li>
+                  <li><a href="../pages/digitalDetail14.html">[TrackB]IoT 과정 IoT 기술을 적용한 조선해양업의 인프라 및 플랫폼의 이해</a></li>
+                  <li><a href="../pages/digitalDetail15.html">[TrackA]조선해양 DX 기술 교육 과정 > AI 과정 기본</a></li>
+                  <li><a href="../pages/digitalDetail16.html">[TrackA]조선해양 DX 기술 교육 과정 > AI 과정 심화</a></li>
+                  <li><a href="../pages/digitalDetail17.html">[TrackA]조선해양 DX 기술 교육 과정 > AI 과정 전문가</a></li>
+                </ul>
+              </div>
+              <div class="right-wrap">
+                <h2 class="right-tit">[TrackA]조선해양 DX 기술 교육 과정 > AI 과정 전문가
+                </h2>
+                <div class="edu-char-wrap">
+                  <h4 class="con-tit">교육과정 특징</h4>
+                  <ul class="char-list">
+                    <li>&middot; AI를 활용하여 조선해양산업에서 발생할 수 있는 문제를 해결하는 데 필요한 지식과 실용적인 기술 습득합니다. </li>
+                    <li>&middot; 차량 파손 이미지 데이터를 활용하여 손상 유형과 범위를 분류하는 능력을 개발합니다.</li>
+                    <li>&middot; 자율주행 차량의 고장 진단 데이터를 기반으로 주요 부품의 결함을 조기에 탐지하는 인공지능 모델을 구축 할 수 있습니다.</li>
+                    <li>&middot; Whisper를 활용한 소음 환경에서 음성 인식 및 명령어 분석 시스템을 설계 할 수 있습니다.</li>
+                  </ul>
+                </div>
+                <div class="edu-loadmap-wrap">
+                  <h4 class="con-tit">교육과정 로드맵</h4>
+                  <div class="flex-wrap">
+                    <div class="loadmap-list">
+                      <ul>
+                        <li>
+                          <div class="stapBox">
+                            <div class="step">1단계</div>
+                            <div class="step-tit step-siz">CNN 기본 개념 이해 및 차량 파손 이미지 데이터셋을 활용한 분류 문제의 이해</div>
+                          </div>
+                        </li>
+                        <li class="step-txt">
+                          <p>&middot; CNN(Convolutional Neural Networks)의 기본개념과 원리 습득</p>
+                          <p>&middot; 차량 파손 이미지 데이터 셋 구조와 특성 분석</p>
+                          <p>&middot; 데이터 전처리와 증강기술의 중요성 이해</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="loadmap-list">
+                      <ul>
+                        <li>
+                          <div class="stapBox">
+                            <div class="step">2단계</div>
+                            <div class="step-tit step-siz">이미지 세그멘테이션을 통한 차량 손상 영역 분리 및 분석 능력 습득</div>
+                          </div>
+                        </li>
+                        <li class="step-txt">
+                          <p>&middot; 이미지 세그멘테이션 알고리즘과 접근 방법론 이해</p>
+                          <p>&middot; 차량 손상 영역의 세그멘테이션을 위한 실습</p>
+                          <p>&middot; 실제 사례를 통한 세그멘테이션 모델 성능 평가</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="loadmap-list">
+                      <ul>
+                        <li>
+                          <div class="stapBox">
+                            <div class="step">3단계</div>
+                            <div class="step-tit step-siz">자율주행 차량 데이터를 이해하고 이상 징후 탐지를 위한 시계열 분석 방법 습득</div>
+                          </div>
+                        </li>
+                        <li class="step-txt">
+                          <p>&middot; 자율주행 고장진단 데이터셋 구조와 특징 학습</p>
+                          <p>&middot; 시계열 데이터 분석 기법 학습 및 실습</p>
+                          <p>&middot; 모터-감속기 및 배터리 데이터를 이용한 이상 탐지 모델 설계</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="loadmap-list">
+                      <ul>
+                        <li>
+                          <div class="stapBox">
+                            <div class="step">4단계</div>
+                            <div class="step-tit step-siz">Transformer 모델 이해 및 소음 환경 데이터를 활용한 음성 인식 능력 향상</div>
+                          </div>
+                        </li>
+                        <li class="step-txt">
+                          <p>&middot; Transformer 모델의 기본 구조와 작동 원리 학습</p>
+                          <p>&middot; Whisper를 이용한 명령어 인식 모델 구축 실습</p>
+                          <p>&middot; 소음 데이터에 강인한 음성 인식 시스템 설계</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="loadmap-list">
+                      <ul>
+                        <li>
+                          <div class="stapBox">
+                            <div class="step">5단계</div>
+                            <div class="step-tit step-siz">조선해양산업 관련 데이터셋을 활용하여 통합 AI 솔루션 개발</div>
+                          </div>
+                        </li>
+                        <li class="step-txt">
+                          <p>&middot; 조선해양산업 문제에 대한 실제 데이터셋 분석</p>
+                          <p>&middot; 그룹별 프로젝트 작업을 통한 종합적인 문제 해결 방안 도출</p>
+                          <p>&middot; 결과물 발표</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 컨텐츠가 들어갈 부분 eee -->
+    </div>
+
+    <div class="footerWrap">
+      <section>
+        <div class="util_link_outer">
+          <div class="util_link">
+            <div class="util_link_list footer_autoplay" style="margin-bottom:0px;">
+              <!-- 교육부, 한국연구재단, 울산경남지역혁신플랫폼, 경상남도, 울산광역시, 경남대학교, 울산경남지역혁신플랫폼 ict -->
+              <a href="https://www.moe.go.kr/main.do?s=moe" target="_blank" class="util_link_item"><img src="../front/images/logo_moe.png" class="util_link_img" alt="교육부"></a>
+              <a href="https://www.nrf.re.kr/index" target="_blank" class="util_link_item"><img src="../front/images/logo_nrf.png" class="util_link_img" alt="한국연구재단"></a>
+              <a href="http://gn-platform.or.kr/main.do" target="_blank" class="util_link_item"><img src="../front/images/logo_platform.png" class="util_link_img" alt="울산·경남지역혁신플랫폼"></a>
+              <a href="https://www.gyeongnam.go.kr/index.gyeong" target="_blank" class="util_link_item"><img src="../front/images/logo_gyeongnam.png" class="util_link_img" alt="경상남도"></a>
+              <a href="https://www.ulsan.go.kr/u/rep/main.ulsan" target="_blank" class="util_link_item"><img src="../front/images/logo_ulsan.png" class="util_link_img" alt="울산광역시"></a>
+              <a href="https://www.kyungnam.ac.kr" target="_blank" class="util_link_item"><img src="../front/images/logo_kyungnam_univ.png" class="util_link_img" alt="경남대학교"></a>
+              <a href="https://platform.kyungnam.ac.kr/kr/" target="_blank" class="util_link_item"><img src="../front/images/logo_ict.png" class="util_link_img" alt="울산·경남지역혁신플랫폼 스마트제조ICT사업단"></a>
+            </div>
+            <div class="arrow prev" id="footer_arrow_prev"><span class="arrow_hidden">prev</span></div>
+            <div class="arrow next" id="footer_arrow_next"><span class="arrow_hidden">next</span></div>
+          </div>
+        </div>
+        <div id="footer">
+          <div class="inner">
+            <div class="footer_logoArea">
+              <div class="foot_logo"><img src="../front/images/logo_footer.svg" alt="USG코딩오픈메타캠퍼스"></div>
+              <div class="tail_menu">
+                <ul>
+                  <li><a href="javascript:void(0);" onclick="gnbMenuAction('/common/privacyTerms.do')" class="color_orange">개인정보처리방침</a></li>
+                  <li><a href="javascript:void(0);" onclick="gnbMenuAction('/common/useTerms.do')">이용약관</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tail_menu">
+            </div>
+            <div class="addr">
+              <p class="txt_add">(51767 ) 경상남도 창원시 마산합포구 경남대학로 7 창조관 3층 스마트제조ICT사업단 (USG코딩오픈메타캠퍼스)</p>
+              <p class="copyright mt20 mt15">USG코딩오픈메타캠퍼스 센터는 경남대학교가 운영하고 있으며, 교육 및 업무에 대한 모든 책임은 경남대학교에 있습니다.</p>
+              <p class="copyright mt05">Copyrightⓒ USG코딩오픈메타캠퍼스 센터 ALL RIGHT RESERVED</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="../front/js/menu.js"></script>
+</body>
+
+</html>
