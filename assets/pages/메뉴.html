@@ -1,0 +1,28 @@
+gnb 메뉴
+
+<ul class="sub-menu">
+                    <li class="menu-item"><a href="#" class="plfrt05">클라우드 비즈니스 솔루션</a></li>
+                    <li class="menu-item"><a href="#">플랫폼 비즈니스 과정</a></li>
+                    <li class="menu-item"><a href="#">산업디지털트윈 과정</a></li>
+                    <li class="menu-item"><a href="#" class="solution">클라우드 기반 비지니스<br>솔루션(ERP)</a></li>
+                    <li class="menu-item"><a href="#">부트캠프 과정</a></li>
+                  </ul>
+
+topNavi.css
+
+.header .menu>.menu-item>.sub-menu>.menu-item>a { display: block; font-family: inherit; font-size: 18px; font-weight: 600; line-height: inherit; padding: 20px 20px; color: #999; text-transform: capitalize; text-rendering: optimizeLegibility; -webkit-transition: all .35s ease; -o-transition: all .35s ease; transition: all .35s ease; text-align: center; } 
+
+
+
+/* 2024-08-19 추가 */
+.header .menu>.menu-item .solution {
+    padding: 5px 10px !important;
+    line-height: 24px !important;
+}
+
+@media only screen and (max-width: 992px){
+
+.header .menu .menu-item .solution { padding: 15px 32px !important; line-height: inherit !important; }
+
+.header .menu .menu-item .solution br { display: inline-block; content: ""; padding: 0 2px; }
+}

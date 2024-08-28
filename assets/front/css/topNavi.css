@@ -1,9 +1,5 @@
-@charset "utf-8";
-/* ui style */
-*:focus {
-    outline-offset: -0.4rem;
-    outline: 4px solid rgba(36, 107, 235, 1);
-}
+@charset "utf-8";/* ui style */
+*:focus { outline-offset: -0.4rem; outline: 4px solid rgba(36, 107, 235, 1); } 
 
 
 .header_container { width: 100%; display: block; margin: 0 auto; } 
@@ -129,7 +125,7 @@ Navigation Menu
  .header .menu>.menu-item-has-children:hover>.sub-menu { display: block; opacity: 1; visibility: visible; } 
 
  .header .menu>.menu-item-has-children:hover>a .expand::after { -webkit-transform: translate(-50%, -50%) rotate(0deg); -ms-transform: translate(-50%, -50%) rotate(0deg); transform: translate(-50%, -50%) rotate(0deg) } 
-}
+ }
 
 /* 모바일 */
 @media only screen and (max-width: 992px){
@@ -189,10 +185,10 @@ Navigation Menu
 
  /* 2024.07.04 [s] */
 
- li.menu-item.menu-item-has-children.active > .btn-toggle{ color: #fff; background-color: #113E62; }
- li.menu-item.menu-item-has-children.active > .btn-toggle .expand:after { background: #fff; }
-.header .menu>.menu-item.menu-item-no-children.selected > a{ color:#fff; background-color: #113E62; }
-  
+ li.menu-item.menu-item-has-children.active > .btn-toggle { color: #fff; background-color: #113E62; } 
+ li.menu-item.menu-item-has-children.active > .btn-toggle .expand:after { background: #fff; } 
+.header .menu>.menu-item.menu-item-no-children.selected > a { color:#fff; background-color: #113E62; } 
+ 
 /* 2024.07.04 [e] */
 
 
@@ -245,6 +241,11 @@ Navigation Menu
  .header .menu>.menu-item:hover>a.bg_none { background-color: transparent; } 
  .header .menu-item .snsWrap { display: flex; justify-content: flex-end; padding: 14px 20px; } 
  .menu-item .snsWrap .mo-youtube { margin-right: 5px; } 
+
+/* 2024-08-19 추가 */
+ .header .menu .menu-item .solution { padding: 15px 32px !important; line-height: inherit !important; } 
+
+.header .menu .menu-item .solution br { display: inline-block; content: ""; padding: 0 2px; } 
  }
 
 /* 2024-06-11 */
@@ -252,3 +253,7 @@ Navigation Menu
 .nav_item .icon_sns.mrt02 { margin-right: 2px; } 
 .nav_item .icon_sns img { transition: 0.5s } 
 .nav_item .icon_sns:hover img { transform: rotateY(180deg); } 
+
+/* 2024-08-19 추가 */
+.header .menu>.menu-item .solution { padding: 5px 10px !important; line-height: 24px !important; } 
+

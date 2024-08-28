@@ -1,21 +1,20 @@
-@charset "utf-8"; 
-
+@charset "utf-8";
 /******************************************* 
 ui style 
 *******************************************/
-.wrap { margin: 0 auto; width: 100%; display: block; box-sizing: content-box; position: relative; min-height: 100%; clear: both; min-width:360px; } 
+.wrap { margin: 0 auto; width: 100%; display: block; box-sizing: content-box; position: relative; min-height: 100%; clear: both; min-width: 360px; } 
 
-.contents{overflow-x: hidden;}
+.contents { overflow-x: hidden; } 
+
 img { max-width: 100%; vertical-align: middle; display: inline-block; } 
 
-.visual { position: relative } 
+.visual { position: relative}
 
 .visual .swiper { width: 100%; height: 26.25rem; } 
 
 .visual .swiper-wrapper { } 
 
-.visual .swiper-slide { height: 26.25rem; max-width: 100%; vertical-align: middle;
- padding: 0 0; display: inline-flex; justify-content: center; } 
+.visual .swiper-slide { height: 26.25rem; max-width: 100%; vertical-align: middle; padding: 0 0; display: inline-flex; justify-content: center; } 
 
 .visual .swiper-slide.tp1 { background: url("../images/banner_bg01.png") 50% no-repeat; background-size: cover; } 
 
@@ -35,16 +34,16 @@ img { max-width: 100%; vertical-align: middle; display: inline-block; }
 
 .visual .vslCntBox h3 { font-size: 1.875rem; font-weight: 500; color: #fff; display: block; line-height: 1.75rem; } 
 
-.visual .vslCntBox h4 { font-size: 1.5rem; font-weight: 400; color: #fff; line-height: 1.75rem; word-break: keep-all;} 
+.visual .vslCntBox h4 { font-size: 1.5rem; font-weight: 400; color: #fff; line-height: 1.75rem; word-break: keep-all; } 
 
 .visual .vslCntBox h3 p { font-size: 1.5rem; line-height: 1.875rem; } 
 
 
 .visual .vslCntBox h2 { font-size: 3.25rem; font-weight: 600; color: #fff; margin-top: 1.25rem; text-shadow: .25rem .25rem .625rem rgba(0, 0, 0, 0.2); } 
 
-.visual .vslCntBox .lineTxt { position: relative; margin-top: 1.25rem; font-size: 1.5rem; font-weight: 400; color: #fff; line-height: 1.5rem } 
+.visual .vslCntBox .lineTxt { position: relative; margin-top: 1.25rem; font-size: 1.5rem; font-weight: 400; color: #fff; line-height: 1.5rem}
 
-.visual .swiper-pagination { color: white; line-height: 0; bottom: 3.125rem } 
+.visual .swiper-pagination { color: white; line-height: 0; bottom: 3.125rem}
 
 .visual .swiper-pagination-bullet { width: 1rem; height: 1rem; border: .1875rem solid #FFFFFF; background: transparent; opacity: 1; } 
 
@@ -102,16 +101,16 @@ img { max-width: 100%; vertical-align: middle; display: inline-block; }
  ///////////////////////////////////////////////////// */
 
 .trainingWrap,
-.noticeWrap { max-width: 75rem; display: block; margin: 0 auto } 
+.noticeWrap { max-width: 75rem; display: block; margin: 0 auto}
 
 .elementor-wrap { width: 100%; max-width: 75rem; } 
 
 .elementor-wrap .elementor-container { margin: 0; padding: 0; width: 100%; display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: stretch; margin-top: 2.5rem; gap: 1.25rem; } 
 
-.elementor-wrap .elementor-container .elementor-card { display: inline; list-style-type: none;
- border-radius: 1.25rem; width: 100%; } 
+.elementor-wrap .elementor-container .elementor-card { display: inline; list-style-type: none; border-radius: 1.25rem; width: 100%; } 
 
-.elementor-wrap .elementor-container .elementor-card a { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 1.875rem 18px; position: relative; border-radius: 1.25rem; background-color: #fff; border: .1875rem solid #0064BC; } 
+.elementor-wrap .elementor-container .elementor-card a { width: 100%; height: 100%; display: flex; /* justify-content: center; */
+ justify-content: space-between; align-items: center; flex-direction: column; padding: 1.875rem 18px; position: relative; border-radius: 1.25rem; background-color: #fff; border: .1875rem solid #0064BC; } 
 
 
 .elementor-wrap .elementor-container .elementor-card a:hover { background: #0064BC; color: #fff; border-radius: 1rem; } 
@@ -154,7 +153,8 @@ img { max-width: 100%; vertical-align: middle; display: inline-block; }
 .elementor-wrap .elementor-container .elementor-card a.img01:hover::after,
 .elementor-wrap .elementor-container .elementor-card a.img02:hover::after,
 .elementor-wrap .elementor-container .elementor-card a.img03:hover::after,
-.elementor-wrap .elementor-container .elementor-card a.img04:hover::after { content: ""; display: block; position: absolute; top: -0.1875rem; left: 50%; transform: translate(-50%, 50%); } 
+.elementor-wrap .elementor-container .elementor-card a.img04:hover::after { content: ""; display: block; position: absolute; /* top: -0.1875rem; */
+ top: 1.5rem; left: 50%; transform: translate(-50%, 50%); } 
 
 .elementor-wrap .elementor-container .elementor-card a.img01:hover::after { width: 9.375rem; height: 9.375rem; background: url(../images/img_hover_01.png) no-repeat center 100%; } 
 
@@ -166,7 +166,7 @@ img { max-width: 100%; vertical-align: middle; display: inline-block; }
 .elementor-wrap .elementor-container .elementor-card a.img04:hover::after { width: 9.375rem; height: 9.375rem; background: url(../images/img_hover_04.png) no-repeat center 100%; } 
 
 
-.elementor-wrap .elementor-container .elementor-card a .head_tit { font-size: 1.5rem; font-weight: 700; color: #295FCB; } 
+.elementor-wrap .elementor-container .elementor-card a .head_tit { font-size: 1.5rem; font-weight: 700; color: #295FCB; text-align: center; height: 50px; display: flex; align-items: center; }
 
 .elementor-wrap .elementor-container .elementor-card a img.mt24 { margin-top: 1.5rem; } 
 
@@ -185,40 +185,26 @@ img { max-width: 100%; vertical-align: middle; display: inline-block; }
 
 .courseInfo .innWrapA { height: 100%; } 
 
-.courseInfo .subTab01 { justify-content: space-between } 
+.courseInfo .subTab01 { justify-content: space-between}
 
-.courseInfo .subTab01 .nav { width: 20rem; margin-right: 3.125rem } 
+.courseInfo .subTab01 .nav { width: 20rem; margin-right: 3.125rem}
 
 .courseInfo .subTab01 .nav li { width: 100%; display: flex; margin-bottom: .9375rem; } 
 
 .courseInfo .subTab01 .flex { display: flex; margin-top: 2.5rem; } 
 
-.courseInfo .subTab01 .nav li a {
-    width: 100%;
-    position: relative;
-    height: 3.125rem;
-    line-height: 3.125rem;
-    color: #999;
-    font-weight: 400;
-    background: #fff;
-    border-radius: .5rem;
-    font-size: 1.75rem;
-    text-indent: 1.25rem;
-    padding-left:1.25rem;
-    text-align: left;
-    display: flex;
-    align-items: center;
-}
+.courseInfo .subTab01 .nav li a { width: 100%; position: relative; height: 3.125rem; line-height: 2.125rem; color: #999; font-weight: 400; background: #fff; border-radius: .5rem; font-size: 1.45rem; /* text-indent: 1.25rem; */
+ padding-left:2.55rem; text-align: left; display: flex; align-items: center; word-break: keep-all; } 
 
 .courseInfo .subTab01 .nav li a::before { content: ""; display: block; position: absolute; top: 15%; left: 0%; transform: translate(-0%, -0%); width: 2rem; height: 2rem; background: url(../images/ico_check.svg) no-repeat center; margin-right: 1.875rem; } 
 
 .courseInfo .subTab01 .nav li a.active { background: #fff; color: #0088F6; font-weight: 700; } 
 
-.courseInfo .subTab01 .nav li div { width: 100%; display: flex } 
+.courseInfo .subTab01 .nav li div { width: 100%; display: flex}
 
-.courseInfo .subTab01 .nav li div:hover>a { border: .25rem solid #544E91; color: #544E91 } 
+.courseInfo .subTab01 .nav li div:hover>a { border: .25rem solid #544E91; color: #544E91}
 
-.courseInfo .subTab01 .con { flex: 1 } 
+.courseInfo .subTab01 .con { flex: 1}
 
 .lineBox { padding: 0; } 
 
@@ -228,26 +214,11 @@ img { max-width: 100%; vertical-align: middle; display: inline-block; }
 
 .lineBox .select-inner:first-child { padding-top: 0; } 
 
-.lineBox .select-inner .date {
-    background-color: #E3F5FF;
-    border: .125rem solid #007AF5;
-    border-radius: .9375rem;
-    height: 4.375rem;
-    text-align: center;
-    margin-right: 2rem;
-    width: 100%;
-    max-width:4.375rem ;
-}
-.lineBox .select-inner .date:after{
-    display: block;
-    content: '';
-    padding-bottom: 100%; 
-}
+.lineBox .select-inner .date { background-color: #E3F5FF; border: .125rem solid #007AF5; border-radius: .9375rem; height: 4.375rem; text-align: center; margin-right: 2rem; width: 100%; max-width: 4.375rem; } 
 
-.lineBox .select-inner .date .date_inner{display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 12px 0;}
+.lineBox .select-inner .date:after { display: block; content: ''; padding-bottom: 100%; } 
+
+.lineBox .select-inner .date .date_inner { display: block; margin-left: auto; margin-right: auto; padding: 12px 0; } 
 
 
 .lineBox .select-inner .date .day { font-size: 1.75rem; font-weight: 600; color: #007AF5; } 
@@ -256,7 +227,7 @@ img { max-width: 100%; vertical-align: middle; display: inline-block; }
 
 .lineBox .select-inner .notice_tit { font-size: 1.125rem; color: #222222; font-weight: 600; padding-left: 0; } 
 
-.arrow { margin-left: auto } 
+.arrow { margin-left: auto}
 
 .dateInner { } 
 
@@ -282,11 +253,9 @@ hr.new3 { border-top: .0625rem dashed #007AF5; margin: .625rem 0; }
 /* 글자 숨김처리 */
 .arrow_hidden { overflow: hidden; display: inline-block; position: relative; z-index: -1; border: 0; width: .0625rem; height: .0625rem; clip: rect(.0625rem, .0625rem, .0625rem, .0625rem); clip-path: inset(50%); } 
 
-#footer_arrow_prev { background: url(../images/ico_prev.png) no-repeat left center;
- left: .625rem; } 
+#footer_arrow_prev { background: url(../images/ico_prev.png) no-repeat left center; left: .625rem; } 
 
-#footer_arrow_next { background: url(../images/ico_next.png) no-repeat right center; 
- right: .625rem; } 
+#footer_arrow_next { background: url(../images/ico_next.png) no-repeat right center; right: .625rem; } 
 
 /* footer 관련기관 [e] */
 
@@ -295,9 +264,9 @@ hr.new3 { border-top: .0625rem dashed #007AF5; margin: .625rem 0; }
 .mo_nav_wrap { display: none; } 
 
 .scrollDisable { height: 100%; overflow: hidden; -ms-overflow-style: none; /* 인터넷 익스플로러 */
- scrollbar-width: none; /* 파이어폭스 */ } 
+ scrollbar-width: none; /* 파이어폭스 */}
 
-.scrollDisable:-webkit-scrollbar { display: none; /* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */ } 
+.scrollDisable:-webkit-scrollbar { display: none; /* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */}
 
 #footer { position: relative; width: 100%; background: #113E62; } 
 
@@ -311,7 +280,7 @@ hr.new3 { border-top: .0625rem dashed #007AF5; margin: .625rem 0; }
 
 #footer .tail_menu ul { display: flex; align-items: center; } 
 
-#footer .tail_menu ul li { position: relative; padding: 0 1.25rem 0 1.25rem } 
+#footer .tail_menu ul li { position: relative; padding: 0 1.25rem 0 1.25rem}
 
 #footer .tail_menu ul li::before { content: ""; position: absolute; right: 0rem; top: .125rem; width: .0625rem; height: .75rem; background: #fff; } 
 
@@ -343,13 +312,12 @@ hr.new3 { border-top: .0625rem dashed #007AF5; margin: .625rem 0; }
  반응형
  ///////////////////////////////////////////////////// */
 
-@media all and (max-width: 87.4375rem) { 
-
+@media all and (max-width: 87.4375rem) {
  .mo_contents { margin-top: 0; } 
 
  .visual .vslCntBox { padding: 0 1.25rem; } 
 
- .visual .swiper-slide { padding: 1.25rem 4.0625rem } 
+ .visual .swiper-slide { padding: 1.25rem 4.0625rem}
 
  .visual .swiper-button-wrap .swiper-button-prev { left: -4%; } 
 
@@ -365,13 +333,12 @@ hr.new3 { border-top: .0625rem dashed #007AF5; margin: .625rem 0; }
 
  .member_box.join { background-color: #555; } 
 
- .memberArea { padding: .625rem 1.125rem .625rem 1.25rem } 
+ .memberArea { padding: .625rem 1.125rem .625rem 1.25rem}
 
  .tab_inner .swiper-pagination { display: none; } 
 
- .contents{overflow-y: hidden;}
-
-} 
+ .contents { overflow-y: hidden; } 
+}
 
 @media all and (max-width: 77.5rem){
  .visual .vslCntBox .visual_area { width: 100%; } 
@@ -421,7 +388,7 @@ hr.new3 { border-top: .0625rem dashed #007AF5; margin: .625rem 0; }
 
  .tab_inner .swiper-pagination-clickable .swiper-pagination-bullet { cursor: pointer; } 
 
- .tab_inner .swiper-pagination-bullet-active { opacity: 1; background: #007AF5 } 
+ .tab_inner .swiper-pagination-bullet-active { opacity: 1; background: #007AF5}
 
  .tab_inner .swiper-container .swiper-image .image { gap: 20px !important; } 
 
@@ -432,10 +399,9 @@ hr.new3 { border-top: .0625rem dashed #007AF5; margin: .625rem 0; }
 
  .elementor-wrap .elementor-container .elementor-card a .sub_tit span { display: contents; word-break: keep-all; } 
 
+}
 
- }
-
-@media all and (max-width: 56.25rem) { 
+@media all and (max-width: 56.25rem){
  .hederWrap .utilWrap .logo__usg { margin-bottom: 0; } 
 
  .visual .swiper { height: auto; } 
@@ -462,11 +428,7 @@ hr.new3 { border-top: .0625rem dashed #007AF5; margin: .625rem 0; }
 
  .courseInfo .subTab01 .nav li { width: 50%; } 
 
- .courseInfo .subTab01 .nav li a {
-    font-size:1.5rem !important;
-    padding-left: 1.875rem;
-    text-indent: 0;
-}
+ .courseInfo .subTab01 .nav li a { font-size: 1.5rem !important; padding-left: 1.875rem; text-indent: 0; } 
 
  .lineBox .select-inner .date { margin-right: .9375rem; } 
 
@@ -475,13 +437,13 @@ hr.new3 { border-top: .0625rem dashed #007AF5; margin: .625rem 0; }
  .visual .swiper-button-prev,
  .visual .swiper-button-next { display: none; } 
 
- .lineBox .select-inner .date { min-width: 3.75rem;  min-height: 3.75rem; } 
+ .lineBox .select-inner .date { min-width: 3.75rem; min-height: 3.75rem; } 
 
  .lineBox .select-inner .date .day { font-size: 1.25rem; } 
 
  .lineBox .select-inner .date .yearmonth { font-size: 1rem; } 
 
- .lineBox .select-inner .notice_tit { font-size: 1.125rem; line-height: 1.375rem; font-weight: 600 } 
+ .lineBox .select-inner .notice_tit { font-size: 1.125rem; line-height: 1.375rem; font-weight: 600}
 
  .visual .swiper-button-next { display: none; } 
 
@@ -501,7 +463,7 @@ hr.new3 { border-top: .0625rem dashed #007AF5; margin: .625rem 0; }
 
  .tab_inner .swiper-container .swiper-image { height: auto !important; } 
 
- .tab_inner .swiper-container .swiper-image .image { gap: 20px !important; /} 
+ .tab_inner .swiper-container .swiper-image .image { gap: 20px !important; /}
 
  .tab_inner .swiper-container .swiper-image .image .bgimg_course { height: 250px !important; } 
 
@@ -542,16 +504,17 @@ hr.new3 { border-top: .0625rem dashed #007AF5; margin: .625rem 0; }
 
  .tab_menu .tab { justify-content: flex-start !important; } 
 
- .courseInfo .subTab01 .nav li a::before {  width: 1.75rem; height: 1.75rem;  margin-right: 0; }
+ .courseInfo .subTab01 .nav li a::before { width: 1.75rem; height: 1.75rem; margin-right: 0; } 
 
- .lineBox .arrow.mlf_auto { display: none; }
+ .lineBox .arrow.mlf_auto { display: none; } 
 
  .courseInfo .subTab01 .nav li { width: 100%; } 
  }
 
- @media all and (max-width:540px){
-    .courseInfo .subTab01 .nav li { width: 100%; }   
+@media all and (max-width:540px){
+ .courseInfo .subTab01 .nav li { width: 100%; } 
  }
+
 @media (max-width:740px){
  .tab_inner .swiper-container .swiper-image .image { flex-direction: column !important; } 
 
@@ -565,10 +528,17 @@ hr.new3 { border-top: .0625rem dashed #007AF5; margin: .625rem 0; }
 
  .tab_inner .swiper-container .swiper-image .image .bgimg_course { display: none; } 
 
- 
- .elementor-wrap .elementor-container .elementor-card { width: 100% !important; }
- 
- 
- }
- .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
- .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{display: none;}
+
+ .elementor-wrap .elementor-container .elementor-card { width: 100% !important; } 
+
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after { display: none; } 
+
+
+
+/* 20240827 add css */
+.elementor-wrap .elementor-container .elementor-card a:hover .head_tit.skyblue { color: #fff; line-height: 25px; } 
