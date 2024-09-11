@@ -7,7 +7,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
   <title>USG코딩오픈메타캠퍼스</title>
   <!-- 스타일 -->
-  <link rel="stylesheet" href="../front/css/style.css" /> 
+  <!-- <link rel="stylesheet" href="../front/css/style.css" />  -->
+  <link rel="stylesheet" href="../front/css/font.css" />
+  <link rel="stylesheet" href="../front/css/reset.css" />
+  <link rel="stylesheet" href="../front/css/topNavi.css" /> 
 </head>
 
 <body>
@@ -33,7 +36,8 @@
             <div class="dropdown">
               <a class="dropbtn"><span>USG운영자1님</span></a>
               <div class="dropdown-list">
-                <a href="#">PCMS 관리</a>
+                <a href="#">LMS</a>
+                <a href="#">PCMS</a>
                 <a href="#">개인정보수정</a>
                 <a href="#">로그아웃</a>
               </div>
@@ -54,13 +58,21 @@
             <button type="button" class="closed-menu">
               <img src="../front/images/closed.svg" class="closed-icon" alt="closed">
             </button>
+            <div class="mobilemember">
+              <div class="memberArea">
+                <a href="" class="member_box login mob-utils">LMS</a>
+                <a href="" class="member_box login mob-utils">PCMS</a>
+                <a href="" class="member_box login">login</a>
+                <a href="" class="member_box join">회원가입</a>
+              </div>
+            </div>
             <ul class="menu">
-              <li class="menu-item mobilemember">
+              <!-- <li class="menu-item mobilemember">
                 <div class="memberArea">
                   <a href="" class="member_box login">login</a>
                   <a href="" class="member_box join">회원가입</a>
                 </div>
-              </li>
+              </li> -->
               <li class="menu-item menu-item-has-children">
                 <a href="/common/about.do" data-toggle="sub-menu" class="btn-toggle">About<i class="expand"></i></a>
                 <ul class="sub-menu">

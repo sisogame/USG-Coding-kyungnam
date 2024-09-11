@@ -2,7 +2,6 @@
 
 @import url('reset.css'); 
 @import url('font.css'); 
-@import url('topNavi.css');
 @import url('ui.css');
 @import url('tabSwiper.css'); 
 @import url('swiper-bundle.min.css'); 
@@ -11,3 +10,7 @@
 /* sub page */
 @import url('ui-sub.css'); 
 @import url('aos.css'); 
+
+/* top-Navigation, footer */
+@import url('topNavi.css');
+@import url('ui-footer.css'); 
