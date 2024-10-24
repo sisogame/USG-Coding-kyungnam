@@ -1,12 +1,18 @@
 $(document).ready(function () {
   // 메인 배너 이미지
   const swiper = new Swiper(".swiper", {
-    spaceBetween: 30,
+    
+    slidesPerView: 1,
+    loop: true,
+    freemode: true,
+
+    spaceBetween: 0,
     centeredSlides: true,
-    speed: 600,
+    speed: 1800, //2024-10-17 modify
+    
     parallax: true,
     autoplay: {
-      delay: 2500,
+      delay:2200,//2024-10-17 modify
       disableOnInteraction: false,
     },
     pagination: {
@@ -18,6 +24,8 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+
+  
   });
 
   //스톱
@@ -150,3 +158,4 @@ $(document).ready(function () {
     ],
   });
 });
+

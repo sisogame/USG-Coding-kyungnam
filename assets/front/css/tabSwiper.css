@@ -56,9 +56,9 @@
 .tab_inner .swiper-container .swiper-button-next:after,
 .tab_inner .swiper-container .swiper-button-prev:after { display: none; } 
 
-.tab_inner .swiper-container .swiper-image .image .bgimg_course { background-color: #cccccc; height: 305px; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; border-radius: 18px 18px 0 0; } 
+.tab_inner .swiper-container .swiper-image .image .bgimg_course { background-color: #cccccc; height: 327px; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; border-radius: 18px 18px 0 0; } 
 
-.tab_inner .swiper-container .swiper-image .image .card-body { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; padding: 1.25rem; border-top: 1px solid #ccc}
+.tab_inner .swiper-container .swiper-image .image .card-body { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; padding: 1rem 1.25rem; border-top: 1px solid #ccc}
 
 .tab_inner .swiper-container .swiper-image .image .card-body .card-sub-tit { font-size: 16px; line-height: 24px; font-weight: 500; line-height: 20px; color: #999999; display: inline-block; position: relative; padding-left: 12px; } 
 
@@ -80,7 +80,7 @@
 
 .tab_inner .swiper-container .swiper-image .image .card-body p { font-size: 18px; line-height: 26px; margin: 0; color: #999; word-break: keep-all; word-wrap: break-word; font-weight : 400}
 
-.tab_inner .swiper-container .swiper-image .image .card-body hr.new1 { border-top: 1px solid #007AF5; margin: 15px 0 12px 0; } 
+.tab_inner .swiper-container .swiper-image .image .card-body hr.new1 { border-top: 1px solid #007AF5; margin: 8px 0 ; } 
 
 /* 20240514 확인 중이다!!. */
 .tab_inner .swiper-container .swiper-slide.swiper-slide-duplicate.swiper-slide-prev .flexslider-overlay,
@@ -108,3 +108,6 @@
 .tab_inner .swiper-container .swiper-slide.swiper-slide-prev .fx-img-left .card-body .card-sub-tit::before,
 .tab_inner .swiper-container .swiper-slide.swiper-slide-prev .fx-img-right .card-body .card-sub-tit::before { content: ''; display: inline-block; background: url('../images/ico-circle.svg'); width: 8px; height: 8px; position: absolute; top: 7px; left: 0; } 
 /* swiper area[e] */
+
+
+
