@@ -56,7 +56,7 @@
 .tab_inner .swiper-container .swiper-button-next:after,
 .tab_inner .swiper-container .swiper-button-prev:after { display: none; } 
 
-.tab_inner .swiper-container .swiper-image .image .bgimg_course { background-color: #cccccc; height: 327px; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; border-radius: 18px 18px 0 0; } 
+.tab_inner .swiper-container .swiper-image .image .bgimg_course { background-color: transparent; height: 327px; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; border-radius: 18px 18px 0 0; } 
 
 .tab_inner .swiper-container .swiper-image .image .card-body { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; padding: 1rem 1.25rem; border-top: 1px solid #ccc}
 
