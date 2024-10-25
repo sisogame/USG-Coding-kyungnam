@@ -31,6 +31,16 @@
           </div>
           <div class="util_right">
             <ul class="nav_item">
+              <li style="display: flex; flex-direction: column; width: 300px; position: relative;">
+
+                <button class="toggle" data-id="toggle-1">Slide toggle</button>
+
+                <div class="toggle-me" id="toggle-1" style=" position: relative;">
+                  <div class="text-wrapper">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                </div>
+              </li>
               <li class=""><a href="https://www.youtube.com/@usg_comc" class="icon_sns mrt02" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube">
                 </a>
                 <a href="https://www.instagram.com/p/C706rj3S4Zk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="icon_sns" target="_blank"><img src="../front/images/icon_insta.png" alt="Instagram">
@@ -750,5 +760,62 @@
 
 
 </body>
+<!-- <script>
+  function toggleMenu() {
+    var element = document.getElementById("myDIV");
+    element.classList.toggle("mystyle");
+  }
+</script> -->
+
+<!-- <script>
+$('.login').on('click', function(e){
+    e.preventDefault();
+    $('.form').fadeToggle(500);
+    $(this).toggleClass('close');
+});
+</script> -->
+
+<script>
+  const slideToggle = (element) => {
+    if (!element.classList.contains("active")) {
+      element.classList.add("active");
+      element.style.height = "auto";
+
+      const height = element.clientHeight + "px";
+
+      element.style.height = "0px";
+
+      setTimeout(function () {
+        element.style.height = height;
+      }, 0);
+    } else {
+      element.style.height = "0px";
+
+      element.addEventListener(
+        "transitionend",
+        () => element.classList.remove("active"),
+        {
+          once: true
+        }
+      );
+    }
+  };
+
+  document.querySelectorAll(".toggle").forEach((toggle) => {
+    const container = document.getElementById(toggle.dataset.id);
+
+    if (!container) return;
+
+    toggle.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      slideToggle(container);
+    });
+  });
+
+
+</script>
+
+
 
 </html>
