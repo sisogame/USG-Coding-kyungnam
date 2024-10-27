@@ -31,13 +31,20 @@
           </div>
           <div class="util_right">
             <ul class="nav_item">
-              <li style="display: flex; flex-direction: column; width: 300px; position: relative;">
-
-                <button class="toggle" data-id="toggle-1">Slide toggle</button>
-
-                <div class="toggle-me" id="toggle-1" style=" position: relative;">
-                  <div class="text-wrapper">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <li style="position: relative;width: 300px;">
+                <div class="HomeDivLeft" style="position: absolute;z-index: 2;top: -20px;background-color: #fff; ">
+                  <!-- <p class="HomeDivHeading">Recent Compares</p> -->
+                
+                  <input class="HomeDivHeading icon-search" type="text" name="searchtext" id="searchtext" placeholder="과정 또는 교재를 검색하세요" tabindex="1">
+                  <div class="HomeContent">
+                    <div class="mb-2">
+                      <div class="suggest-devide"></div>
+                      <div class="pt-2 hash-area-head">인기검색어</div>
+                      <ul class="hash-area">
+                        <li><a href="#" class="hash-area-inner">트윈</a></li>
+                        <li><a href="#" class="hash-area-inner">산업디지털트윈</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -775,7 +782,7 @@ $('.login').on('click', function(e){
 });
 </script> -->
 
-<script>
+<!-- <script>
   const slideToggle = (element) => {
     if (!element.classList.contains("active")) {
       element.classList.add("active");
@@ -801,7 +808,7 @@ $('.login').on('click', function(e){
     }
   };
 
-  document.querySelectorAll(".toggle").forEach((toggle) => {
+  document.querySelectorAll(".toggleA").forEach((toggle) => {
     const container = document.getElementById(toggle.dataset.id);
 
     if (!container) return;
@@ -814,8 +821,16 @@ $('.login').on('click', function(e){
   });
 
 
+</script> -->
+
+<script>
+
+  jQuery(document).ready(function () {
+      jQuery(".HomeContent").hide();
+      jQuery(".HomeDivHeading").click(function () {
+        jQuery(this).next(".HomeContent").slideToggle(250);
+      });
+    });
 </script>
-
-
 
 </html>
