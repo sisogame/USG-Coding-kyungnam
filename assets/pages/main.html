@@ -31,24 +31,19 @@
           </div>
           <div class="util_right">
             <ul class="nav_item">
-              <li style="position: relative;width: 300px;">
-                <div class="HomeDivLeft" style="position: absolute;z-index: 2;top: -20px;background-color: #fff; ">
-                  <!-- <p class="HomeDivHeading">Recent Compares</p> -->
-                
-                  <input class="HomeDivHeading icon-search" type="text" name="searchtext" id="searchtext" placeholder="과정 또는 교재를 검색하세요" tabindex="1">
-                  <div class="HomeContent">
-                    <div class="mb-2">
-                      <div class="suggest-devide"></div>
-                      <div class="pt-2 hash-area-head">인기검색어</div>
+              <li class="search-Wrap">
+                <div class="search-box">
+                  <input class="search-input icon-search" type="text" name="searchBox" id="" placeholder="과정 또는 교재를 검색하세요" >
+                  <div class="search-content">
+                      <div class="hash-area-head">인기검색어</div>
                       <ul class="hash-area">
                         <li><a href="#" class="hash-area-inner">트윈</a></li>
                         <li><a href="#" class="hash-area-inner">산업디지털트윈</a></li>
                       </ul>
-                    </div>
                   </div>
                 </div>
               </li>
-              <li class=""><a href="https://www.youtube.com/@usg_comc" class="icon_sns mrt02" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube">
+              <li><a href="https://www.youtube.com/@usg_comc" class="icon_sns mrt02" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube">
                 </a>
                 <a href="https://www.instagram.com/p/C706rj3S4Zk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="icon_sns" target="_blank"><img src="../front/images/icon_insta.png" alt="Instagram">
                 </a>
@@ -758,79 +753,10 @@
 
   <script src="../front/js/menu.js"></script>
 
-  <script>
-    // $('.menu-item a.btn-test').on('click', function () {
-    //   $('.menu-item a.btn-test').removeClass('selected');
-    //   $(this).addClass('selected');
-    // });
-  </script>
-
+  <div class="floating_btn">
+    <button type="button" class="top">최상단으로</button>
+</div>
 
 </body>
-<!-- <script>
-  function toggleMenu() {
-    var element = document.getElementById("myDIV");
-    element.classList.toggle("mystyle");
-  }
-</script> -->
-
-<!-- <script>
-$('.login').on('click', function(e){
-    e.preventDefault();
-    $('.form').fadeToggle(500);
-    $(this).toggleClass('close');
-});
-</script> -->
-
-<!-- <script>
-  const slideToggle = (element) => {
-    if (!element.classList.contains("active")) {
-      element.classList.add("active");
-      element.style.height = "auto";
-
-      const height = element.clientHeight + "px";
-
-      element.style.height = "0px";
-
-      setTimeout(function () {
-        element.style.height = height;
-      }, 0);
-    } else {
-      element.style.height = "0px";
-
-      element.addEventListener(
-        "transitionend",
-        () => element.classList.remove("active"),
-        {
-          once: true
-        }
-      );
-    }
-  };
-
-  document.querySelectorAll(".toggleA").forEach((toggle) => {
-    const container = document.getElementById(toggle.dataset.id);
-
-    if (!container) return;
-
-    toggle.addEventListener("click", (event) => {
-      event.preventDefault();
-
-      slideToggle(container);
-    });
-  });
-
-
-</script> -->
-
-<script>
-
-  jQuery(document).ready(function () {
-      jQuery(".HomeContent").hide();
-      jQuery(".HomeDivHeading").click(function () {
-        jQuery(this).next(".HomeContent").slideToggle(250);
-      });
-    });
-</script>
 
 </html>

@@ -56,7 +56,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 15px;
+    /* gap: 15px; */
+    /* 2024-10-28  수정 [s] */
+    gap: 12px;
+     /* 2024-10-28  수정 [e] */
 }
 
 .hederWrap .utilWrap .util_right .nav_item li {

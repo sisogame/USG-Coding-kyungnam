@@ -1,7 +1,6 @@
 $(document).ready(function () {
   // 메인 배너 이미지
   const swiper = new Swiper(".swiper", {
-    
     slidesPerView: 1,
     loop: true,
     freemode: true,
@@ -9,10 +8,10 @@ $(document).ready(function () {
     spaceBetween: 0,
     centeredSlides: true,
     speed: 1800, //2024-10-17 modify
-    
+
     parallax: true,
     autoplay: {
-      delay:2200,//2024-10-17 modify
+      delay: 2200, //2024-10-17 modify
       disableOnInteraction: false,
     },
     pagination: {
@@ -24,8 +23,6 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-
-  
   });
 
   //스톱
@@ -159,3 +156,50 @@ $(document).ready(function () {
   });
 });
 
+// gnb> search area
+document.addEventListener("DOMContentLoaded", function () {
+  const navItems = document.querySelectorAll(".search-box");
+
+  navItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      navItems.forEach((navItem) => navItem.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
+  // 부드럽게 열리기
+  $(document).ready(function () {
+    $(".search-box").click(function () {
+      $(".search-content").slideToggle("slow");
+      return false;
+    });
+
+    //  body 영역 클릭하면 닫히기
+    $(document).click(function (e) {
+      //문서 body를 클릭했을때
+      if (e.target.className == "search-content") {
+        return false;
+      }
+      $(".search-content").stop().slideToggle("slow");
+    });
+  });
+});
+
+
+//scroll-Top-Button
+$(function () {
+  if ($(".floating_btn").length > 0) {
+    var floatScl = $(".floating_btn").scrollTop();
+    $(".floating_btn .top").click(function (e) {
+      e.preventDefault();
+      $("html, body").animate({ scrollTop: 0 }, 500);
+    });
+    $(window).scroll(function () {
+      var position = $(window).scrollTop();
+      if (position > 100) {
+        $(".floating_btn .top").addClass("on");
+      } else {
+        $(".floating_btn .top").removeClass("on");
+      }
+    });
+  }
+});
