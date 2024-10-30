@@ -31,18 +31,20 @@
           </div>
           <div class="util_right">
             <ul class="nav_item">
+              <!-- 2024-10-25 검색영역 추가 [s]-->
               <li class="search-Wrap">
                 <div class="search-box">
-                  <input class="search-input icon-search" type="text" name="searchBox" id="" placeholder="과정 또는 교재를 검색하세요" >
+                  <input class="search-input icon-search" type="text" name="searchBox" id="" placeholder="과정 또는 교재를 검색하세요">
                   <div class="search-content">
-                      <div class="hash-area-head">인기검색어</div>
-                      <ul class="hash-area">
-                        <li><a href="#" class="hash-area-inner">트윈</a></li>
-                        <li><a href="#" class="hash-area-inner">산업디지털트윈</a></li>
-                      </ul>
+                    <div class="hash-area-head">인기검색어</div>
+                    <ul class="hash-area">
+                      <li><a href="#" class="hash-area-inner">트윈</a></li>
+                      <li><a href="#" class="hash-area-inner">산업디지털트윈</a></li>
+                    </ul>
                   </div>
                 </div>
               </li>
+              <!-- 2024-10-25 검색영역 추가 [e]-->
               <li><a href="https://www.youtube.com/@usg_comc" class="icon_sns mrt02" target="_blank"><img src="../front/images/icon_youtube.png" alt="youtube">
                 </a>
                 <a href="https://www.instagram.com/p/C706rj3S4Zk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="icon_sns" target="_blank"><img src="../front/images/icon_insta.png" alt="Instagram">
@@ -143,6 +145,32 @@
             </nav>
           </div>
         </div>
+
+        
+          <a href="#" class="btn-search btn-big openmodale">
+          </a>
+
+
+          <!-- Modal -->
+          <div class="modale" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-header">
+                <h2>Please Login</h2>
+                <a href="#" class="btn-close closemodale" aria-hidden="true"><img src="../front/images/closed.svg" class="closed-icon" alt="closed" style=" "></a>
+              </div>
+              <div class="modal-body">
+                <input type="text" name="u" placeholder="User" size="20" /><br>
+                <input type="text" name="p" placeholder="&bull;&bull;&bull;&bull;" size="20" />
+              </div>
+              <div class="modal-footer">
+
+
+                <a href="#" class="btn" id="btn_ingresar">Login</a>
+              </div>
+            </div>
+          </div>
+          <!-- /Modal -->
+        
       </div>
     </div>
 
@@ -751,11 +779,13 @@
     </div>
   </div>
 
-  <script src="../front/js/menu.js"></script>
-
+  <!-- 2024-10-25  Scroll To Top [s]-->
   <div class="floating_btn">
     <button type="button" class="top">최상단으로</button>
-</div>
+  </div>
+  <!-- 2024-10-25  Scroll To Top [e]-->
+
+  <script src="../front/js/menu.js"></script>
 
 </body>
 

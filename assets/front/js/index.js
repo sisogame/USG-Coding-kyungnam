@@ -2,16 +2,16 @@ $(document).ready(function () {
   // 메인 배너 이미지
   const swiper = new Swiper(".swiper", {
     slidesPerView: 1,
-    loop: true,
+    // loop: true,
     freemode: true,
 
     spaceBetween: 0,
     centeredSlides: true,
-    speed: 1800, //2024-10-17 modify
-
+    // speed: 1800, //2024-10-17 modify
+    speed:180000,
     parallax: true,
     autoplay: {
-      delay: 2200, //2024-10-17 modify
+      delay: 220000, //2024-10-17 modify
       disableOnInteraction: false,
     },
     pagination: {
@@ -156,7 +156,7 @@ $(document).ready(function () {
   });
 });
 
-// gnb> search area
+// gnb>  검색영역 열림닫힘
 document.addEventListener("DOMContentLoaded", function () {
   const navItems = document.querySelectorAll(".search-box");
 
@@ -184,7 +184,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 //scroll-Top-Button
 $(function () {
   if ($(".floating_btn").length > 0) {
@@ -202,4 +201,18 @@ $(function () {
       }
     });
   }
+});
+
+
+$(function () {
+//You may use vanilla JS, I just chose jquery
+
+$('.openmodale').click(function (e) {
+  e.preventDefault();
+  $('.modale').addClass('opened');
+});
+$('.closemodale').click(function (e) {
+  e.preventDefault();
+  $('.modale').removeClass('opened');
+});
 });
